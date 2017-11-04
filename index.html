@@ -117,10 +117,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>1) Download the latest source <br />
  2) Create a new folder called build inside the source root (<em>optional</em>) <br />
  3) Run <code>cmake .</code> or <code>cmake ..</code> depending on where you are <br />
- 3) A <code>libthinkpad.so</code> file will be built <br />
+ 4) Run <code>make</code> <br />
+ 5) Run <code>make install</code> <br />
+</p>
+<p>Now to use the library, use <code>-lthinkpad</code>. <br />
+</p>
+<p>To build the examples, use <code>g++ example.cpp -lthinkpad -std=c++11</code> <br />
 </p>
 <h3>Where to start?</h3>
 <p>To start with the library, you can start exploring the <a class="el" href="namespaceThinkPad.html" title="The main libthinkpad interface. This contains all the libthinkpad features. ">ThinkPad</a> namespace. <br />
+</p>
+<p>Also, you can find examples inside the <code>examples</code> directory in the main source tree. <br />
 </p>
 <h3>A few notes</h3>
 <p>This library is early in development, bugs may occur. <br />
