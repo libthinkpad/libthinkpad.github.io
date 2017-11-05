@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['welcome_20to_20the_20libthinkpad_20documentation',['Welcome to the libthinkpad documentation',['../index.html',1,'']]],
-  ['wait',['wait',['../classThinkPad_1_1PowerManagement_1_1ACPI.html#a59b16fa7a85029d08c2132165961f1d4',1,'ThinkPad::PowerManagement::ACPI']]],
-  ['writeconfig',['writeConfig',['../classThinkPad_1_1Configuration.html#a442ba3b7cb084638e24a79c29ed404a5',1,'ThinkPad::Configuration']]]
+  ['undocked',['UNDOCKED',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cae20a8f1600f17255c9e3dba90da588b1',1,'ThinkPad::PowerManagement']]],
+  ['unknown',['UNKNOWN',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cadfe0f46277e1658d1541d92d42f391b5',1,'ThinkPad::PowerManagement']]]
 ];

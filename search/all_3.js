@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['dock',['Dock',['../classThinkPad_1_1Hardware_1_1Dock.html',1,'ThinkPad::Hardware']]],
-  ['docked',['DOCKED',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06caa43c1f7c9638d4b34c1e4e8410e90245',1,'ThinkPad::PowerManagement']]]
+  ['config_5fkeypair_5ft',['config_keypair_t',['../structThinkPad_1_1config__keypair__t.html',1,'ThinkPad']]],
+  ['config_5fsection_5ft',['config_section_t',['../structThinkPad_1_1config__section__t.html',1,'ThinkPad']]],
+  ['configuration',['Configuration',['../classThinkPad_1_1Configuration.html',1,'ThinkPad']]],
+  ['connect',['connect',['../classThinkPad_1_1DisplayManagement_1_1XServer.html#a19ca4ca190c9951806ec1dc9268c49ac',1,'ThinkPad::DisplayManagement::XServer']]]
 ];
