@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thinklight',['ThinkLight',['../classThinkPad_1_1Hardware_1_1ThinkLight.html',1,'ThinkPad::Hardware']]]
+  ['screenresources',['ScreenResources',['../classThinkPad_1_1DisplayManagement_1_1ScreenResources.html',1,'ThinkPad::DisplayManagement']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['screenresources',['ScreenResources',['../classThinkPad_1_1DisplayManagement_1_1ScreenResources.html',1,'ThinkPad::DisplayManagement']]]
+  ['powerstatemanager',['PowerStateManager',['../classThinkPad_1_1PowerManagement_1_1PowerStateManager.html',1,'ThinkPad::PowerManagement']]]
 ];

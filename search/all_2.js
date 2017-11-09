@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['backlight',['Backlight',['../classThinkPad_1_1Hardware_1_1Backlight.html',1,'ThinkPad::Hardware']]],
   ['button_5ffnf12_5fsuspend',['BUTTON_FNF12_SUSPEND',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cab9a691e29c96537f515a2bef8b4ede92',1,'ThinkPad::PowerManagement']]],
   ['button_5ffnf2_5flock',['BUTTON_FNF2_LOCK',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cac54886a5239928f02de71e19ec1c3a0f',1,'ThinkPad::PowerManagement']]],
   ['button_5ffnf3_5fbattery',['BUTTON_FNF3_BATTERY',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06ca2599aa1917c79d4bee6d4979a91abe28',1,'ThinkPad::PowerManagement']]],

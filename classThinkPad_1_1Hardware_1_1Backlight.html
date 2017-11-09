@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>libthinkpad: ThinkPad::config_keypair_t Struct Reference</title>
+<title>libthinkpad: ThinkPad::Hardware::Backlight Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,36 +86,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceThinkPad.html">ThinkPad</a></li><li class="navelem"><a class="el" href="structThinkPad_1_1config__keypair__t.html">config_keypair_t</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceThinkPad.html">ThinkPad</a></li><li class="navelem"><a class="el" href="namespaceThinkPad_1_1Hardware.html">Hardware</a></li><li class="navelem"><a class="el" href="classThinkPad_1_1Hardware_1_1Backlight.html">Backlight</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structThinkPad_1_1config__keypair__t-members.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classThinkPad_1_1Hardware_1_1Backlight-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ThinkPad::config_keypair_t Struct Reference</div>  </div>
+<div class="title">ThinkPad::Hardware::Backlight Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>a configuration keypair. Max size is 128 chars  
- <a href="structThinkPad_1_1config__keypair__t.html#details">More...</a></p>
+<p>The backlight class is used to control the backlight level on the integrated laptop screen.  
+ <a href="classThinkPad_1_1Hardware_1_1Backlight.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="libthinkpad_8h_source.html">libthinkpad.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:afd2f032625e80325d908195c14e2f81c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd2f032625e80325d908195c14e2f81c"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>key</b> [128]</td></tr>
-<tr class="separator:afd2f032625e80325d908195c14e2f81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87c697c2fcaa0455dc3bee573725093"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae87c697c2fcaa0455dc3bee573725093"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> [128]</td></tr>
-<tr class="separator:ae87c697c2fcaa0455dc3bee573725093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1ef74fba401857acd9d0c5625aeda135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1Hardware_1_1Backlight.html#a1ef74fba401857acd9d0c5625aeda135">setBacklightLevel</a> (float factor)</td></tr>
+<tr class="memdesc:a1ef74fba401857acd9d0c5625aeda135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backlight to the specified factor of illumination.  <a href="#a1ef74fba401857acd9d0c5625aeda135">More...</a><br /></td></tr>
+<tr class="separator:a1ef74fba401857acd9d0c5625aeda135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2737aacbd0923ea1606818669b0d0a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1Hardware_1_1Backlight.html#a5f2737aacbd0923ea1606818669b0d0a">getBacklightLevel</a> ()</td></tr>
+<tr class="memdesc:a5f2737aacbd0923ea1606818669b0d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the illumination factor.  <a href="#a5f2737aacbd0923ea1606818669b0d0a">More...</a><br /></td></tr>
+<tr class="separator:a5f2737aacbd0923ea1606818669b0d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>a configuration keypair. Max size is 128 chars </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>The backlight class is used to control the backlight level on the integrated laptop screen. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5f2737aacbd0923ea1606818669b0d0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ThinkPad::Hardware::Backlight::getBacklightLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current value of the illumination factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current brightness factor </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ef74fba401857acd9d0c5625aeda135"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThinkPad::Hardware::Backlight::setBacklightLevel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the backlight to the specified factor of illumination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>the factor to set (0.0 - 1.0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/gala/CLionProjects/libthinkdock/src/<a class="el" href="libthinkpad_8h_source.html">libthinkpad.h</a></li>
+<li>/home/gala/CLionProjects/libthinkdock/src/libthinkpad.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

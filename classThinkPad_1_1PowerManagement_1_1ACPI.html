@@ -105,21 +105,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e6383d519619041c7e69ee3d964b0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html#a5e6383d519619041c7e69ee3d964b0a2">setEventHandler</a> (<a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPIEventHandler.html">ACPIEventHandler</a> *handler)</td></tr>
-<tr class="separator:a5e6383d519619041c7e69ee3d964b0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b16fa7a85029d08c2132165961f1d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html#a59b16fa7a85029d08c2132165961f1d4">wait</a> ()</td></tr>
+<tr class="memitem:af86f943ce47a0d231f73c932caed4b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html#af86f943ce47a0d231f73c932caed4b94">addEventHandler</a> (<a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPIEventHandler.html">ACPIEventHandler</a> *handler)</td></tr>
+<tr class="memdesc:af86f943ce47a0d231f73c932caed4b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom event handler for <a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html" title="This handles the system power state and ACPI event dispatches. ">ACPI</a> events.  <a href="#af86f943ce47a0d231f73c932caed4b94">More...</a><br /></td></tr>
+<tr class="separator:af86f943ce47a0d231f73c932caed4b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b16fa7a85029d08c2132165961f1d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59b16fa7a85029d08c2132165961f1d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html#a59b16fa7a85029d08c2132165961f1d4">wait</a> ()</td></tr>
+<tr class="memdesc:a59b16fa7a85029d08c2132165961f1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the caller of the method for infinite-loop exit-prevention. Used for testing. <br /></td></tr>
 <tr class="separator:a59b16fa7a85029d08c2132165961f1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31d33daa767d5467dfb32cdd06acb5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab31d33daa767d5467dfb32cdd06acb5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html#ab31d33daa767d5467dfb32cdd06acb5c">start</a> ()</td></tr>
+<tr class="memdesc:ab31d33daa767d5467dfb32cdd06acb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the listening on <a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html" title="This handles the system power state and ACPI event dispatches. ">ACPI</a> events <br /></td></tr>
+<tr class="separator:ab31d33daa767d5467dfb32cdd06acb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This handles the system power state and <a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html" title="This handles the system power state and ACPI event dispatches. ">ACPI</a> event dispatches. </p>
 <p>The <a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html" title="This handles the system power state and ACPI event dispatches. ">ACPI</a> class is used for power event monitoring and reporting. It combines the functionality from udev and acpid into a single API to be used by applications. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5e6383d519619041c7e69ee3d964b0a2"></a>
+<a class="anchor" id="af86f943ce47a0d231f73c932caed4b94"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ThinkPad::PowerManagement::ACPI::setEventHandler </td>
+          <td class="memname">void ThinkPad::PowerManagement::ACPI::addEventHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPIEventHandler.html">PowerManagement::ACPIEventHandler</a> *&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
@@ -127,7 +134,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set a custom event handler for <a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html" title="This handles the system power state and ACPI event dispatches. ">ACPI</a> events</p>
+
+<p>Set a custom event handler for <a class="el" href="classThinkPad_1_1PowerManagement_1_1ACPI.html" title="This handles the system power state and ACPI event dispatches. ">ACPI</a> events. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td></td></tr>
@@ -137,25 +145,9 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a59b16fa7a85029d08c2132165961f1d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ThinkPad::PowerManagement::ACPI::wait </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Block the caller of the method for infinite-loop exit-prevention. Used for testing. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/gala/CLionProjects/libthinkdock/lib/<a class="el" href="libthinkpad_8h_source.html">libthinkpad.h</a></li>
-<li>/home/gala/CLionProjects/libthinkdock/lib/libthinkpad.cpp</li>
+<li>/home/gala/CLionProjects/libthinkdock/src/<a class="el" href="libthinkpad_8h_source.html">libthinkpad.h</a></li>
+<li>/home/gala/CLionProjects/libthinkdock/src/libthinkpad.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

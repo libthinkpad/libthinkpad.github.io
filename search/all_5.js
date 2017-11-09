@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['getbacklightlevel',['getBacklightLevel',['../classThinkPad_1_1Hardware_1_1Backlight.html#a5f2737aacbd0923ea1606818669b0d0a',1,'ThinkPad::Hardware::Backlight']]],
   ['getcontrollers',['getControllers',['../classThinkPad_1_1DisplayManagement_1_1ScreenResources.html#abdf2987d6e6859165bb8dde3f7d94d74',1,'ThinkPad::DisplayManagement::ScreenResources']]],
   ['getdefaultxserver',['getDefaultXServer',['../classThinkPad_1_1DisplayManagement_1_1XServer.html#a338fef6743b63ab7bc533540046c224b',1,'ThinkPad::DisplayManagement::XServer']]],
   ['getdisplay',['getDisplay',['../classThinkPad_1_1DisplayManagement_1_1XServer.html#a86cc042c69dd9c1446cdaa1b4e78ccfb',1,'ThinkPad::DisplayManagement::XServer']]],

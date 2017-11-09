@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['monitor',['Monitor',['../classThinkPad_1_1DisplayManagement_1_1Monitor.html',1,'ThinkPad::DisplayManagement']]]
+  ['dock',['Dock',['../classThinkPad_1_1Hardware_1_1Dock.html',1,'ThinkPad::Hardware']]]
 ];
