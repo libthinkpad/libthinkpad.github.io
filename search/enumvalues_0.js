@@ -9,5 +9,7 @@ var searchData=
   ['button_5fmicmute',['BUTTON_MICMUTE',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06caffe78ea0e5177061825eaae0930f9447',1,'ThinkPad::PowerManagement']]],
   ['button_5fmute',['BUTTON_MUTE',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06ca2b9e8823ef7e16e997bf448de6ee391f',1,'ThinkPad::PowerManagement']]],
   ['button_5fpower',['BUTTON_POWER',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06ca393af922e4626c815d43d045e00e42ba',1,'ThinkPad::PowerManagement']]],
-  ['button_5fthinkvantage',['BUTTON_THINKVANTAGE',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cac3dd65fb1067c40c99e7d9d3eb12c4c3',1,'ThinkPad::PowerManagement']]]
+  ['button_5fthinkvantage',['BUTTON_THINKVANTAGE',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cac3dd65fb1067c40c99e7d9d3eb12c4c3',1,'ThinkPad::PowerManagement']]],
+  ['button_5fvolume_5fdown',['BUTTON_VOLUME_DOWN',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06ca9362aa4ff8aae799940e517c750823b3',1,'ThinkPad::PowerManagement']]],
+  ['button_5fvolume_5fup',['BUTTON_VOLUME_UP',['../namespaceThinkPad_1_1PowerManagement.html#aaa5e02da5185be9f44f4ed680654e06cab0d5f3bc6a232e989500c45da4c1f35f',1,'ThinkPad::PowerManagement']]]
 ];

@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div>libthinkpad
-   &#160;<span>1.3</span>
+   &#160;<span>2.0</span>
    </div>
    <a href="https://github.com/libthinkpad" style="font: Roboto">https://github.com/libthinkpad</a>
   </td>
@@ -94,17 +94,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This library enables userspace applications to configure the ThinkPad-specific hardware and fetch <br />
  information about it. Examples include the docking events, the dock state and other things. <br />
 </p>
-<p>This library also has a X configuration interface (similar to xrandr) based on the X11 RandR <br />
- API wrapped into a nice, object oriented interface. <br />
-</p>
-<p>The API is located in the DisplayManagement namespace.</p>
 <h3>How to build the library?</h3>
 <p>To build the library you will need a few components first: <br />
 </p>
 <p><b>libsystemd</b>: needed to provide suspend support via logind <br />
  <b>libudev</b>: needed to monitor the system interface filesystem <br />
- <b>libXrandr</b>: needed to configure the X server rotation, positioning and state <br />
- <b>libX11</b>: dependency for libXRandr <br />
 </p>
 <p><em>Note about systemd:</em> The library is not heavily dependent on systemd. <br />
  systemd is only needed for power management state changes, and it can be <br />
@@ -116,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><b>Building the library</b>:</p>
 <p>1) Download the latest source <br />
  2) Create a new folder called build inside the source root (<em>optional</em>) <br />
- 3) Run <code>cmake .</code> or <code>cmake ..</code> depending on where you are <br />
+ 3) Run <code>cmake . -DCMAKE_INSTALL_PREFIX=/usr</code> or <code>cmake .. -DCMAKE_INSTALL_PREFIX=/usr</code> depending on where you are <br />
  4) Run <code>make</code> <br />
  5) Run <code>make install</code> <br />
 </p>

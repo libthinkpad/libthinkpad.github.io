@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['reconfigure',['reconfigure',['../classThinkPad_1_1DisplayManagement_1_1Monitor.html#a6cb9611cac3afe270a1a9ac0f9cf83db',1,'ThinkPad::DisplayManagement::Monitor']]],
-  ['release',['release',['../classThinkPad_1_1DisplayManagement_1_1Monitor.html#a25e057e0358fb9f396536cfa9694fe49',1,'ThinkPad::DisplayManagement::Monitor']]],
-  ['requestsuspend',['requestSuspend',['../classThinkPad_1_1PowerManagement_1_1PowerStateManager.html#a80d709d0e9907b98b7fc55776ec7ae4e',1,'ThinkPad::PowerManagement::PowerStateManager']]]
+  ['wait',['wait',['../classThinkPad_1_1PowerManagement_1_1ACPI.html#a59b16fa7a85029d08c2132165961f1d4',1,'ThinkPad::PowerManagement::ACPI']]],
+  ['writeini',['writeIni',['../classThinkPad_1_1Utilities_1_1Ini_1_1Ini.html#ad54130726270b5bf2b70b48fe0a173ad',1,'ThinkPad::Utilities::Ini::Ini']]]
 ];
