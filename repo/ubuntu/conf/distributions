@@ -1,0 +1,7 @@
+Origin: ThinkPad Userspace Tools
+Label: Thinkpad Userspace Tools
+Codename: xenial
+Architectures: i386 amd64
+Components: main
+Description: Apt repository for the ThinkPad Userspace Tools
+SignWith: ABD1A026 
