@@ -1,0 +1,5 @@
+Component: main
+Origin: ThinkPad Userspace Tools
+Label: Thinkpad Userspace Tools
+Architecture: source
+Description: Apt repository for the ThinkPad Userspace Tools

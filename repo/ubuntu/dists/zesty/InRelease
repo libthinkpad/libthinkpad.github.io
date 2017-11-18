@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: ThinkPad Userspace Tools
+Label: Thinkpad Userspace Tools
+Codename: zesty
+Date: Sat, 18 Nov 2017 23:18:49 UTC
+Architectures: i386 amd64
+Components: main
+Description: Apt repository for the ThinkPad Userspace Tools
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
+ 56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
+ 6d88b4201f741250e4c043bc11f6a23c 2147 main/binary-amd64/Packages
+ 5eaefa1934f860106e0e7553899e8593 900 main/binary-amd64/Packages.gz
+ 7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
+ 6d326ec4ffb2b16275bcfd38e7c50b79 2580 main/source/Sources
+ fa00657f641420d82c29f0ab386d87da 1069 main/source/Sources.gz
+ f96f6326bb6337ada111c98fbf25bf8d 163 main/source/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
+ 5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
+ 797cd73e50a970d3290afc1e8539a1965a8642ea 2147 main/binary-amd64/Packages
+ 9afd5df396492d08627857021f21533375235b11 900 main/binary-amd64/Packages.gz
+ 6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
+ 0c5061fcf2a1c0c07e3ff0da5e717d47b0025782 2580 main/source/Sources
+ 2e481ba8b99a2624750d05f7c074b86b54acb859 1069 main/source/Sources.gz
+ d56c1bb50bb70a6ba7699841f2082c4518d9a0d8 163 main/source/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
+ 9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
+ cfe11ab6c0a87b0a350a1cddf583fcd53340c1d4866f19b3a7bc3f0f6f58eb55 2147 main/binary-amd64/Packages
+ 7937c38c16134d76ab705377929b735e8c0b06adb20e22476c62df76831a9404 900 main/binary-amd64/Packages.gz
+ 9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
+ eb22e62cec8331286b88588c8c8587659a7138e7923c57afe2e676a7db29fe35 2580 main/source/Sources
+ 2634b2c4daa6d40cf5a8e6f9230d0dd22c1fee76dfa427319820120d8177d2fe 1069 main/source/Sources.gz
+ 56a46985ce4ec8b7893ec8cadf83e07e5d7bef01af417f40883827bbe4b1b7dc 163 main/source/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQEcBAEBCAAGBQJaEL/ZAAoJEIbD3DGr0aAm8b8H/13zQQ4rzf4hQ11loDnucnL9
+xHJ5Q6UBN//u4uE9F9HyXPLCahAcqx1itqOABI9nwuEKN7cm2uOk87UV9knKi/JT
+Av2zFBiJUD7oOpMWV2b7Q55ROuTNwUg7vyPw19wmlvBFFdq6AsyEuJmthbI894n/
+vNnEsviRZkYQcWu1iKOOcDNFwenRcNmyorgGaCkkUXk4sHgS17EvkJX3hji04Cyb
+isz1JjjPN1lXIliNTyhDXdGOv0Nrne8Ush2dWzoy6jeBOTlP+e8MHR11KQINF9pW
+lLc+KGMmngdWrk66z4m3+WEQ6yWhXQqQDxadAazflni7G9j1aGSBAOKEzqIOSEc=
+=bkrg
+-----END PGP SIGNATURE-----

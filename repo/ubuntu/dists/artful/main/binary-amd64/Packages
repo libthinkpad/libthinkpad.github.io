@@ -1,0 +1,56 @@
+Package: dockd
+Version: 1.20-1ubuntu1~artful
+Architecture: amd64
+Maintainer: Ognjen Galic <smclt30p@gmail.com>
+Installed-Size: 43
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libthinkpad1, libx11-6, libxrandr2 (>= 2:1.5)
+Homepage: http://www.thinkpads.org/
+Priority: optional
+Section: utils
+Filename: pool/main/d/dockd/dockd_1.20-1ubuntu1~artful_amd64.deb
+Size: 11440
+SHA256: 3417de0103e20518830cadfc97e4e4873c42111000b65dc1b8a75375d3d26d42
+SHA1: c45f2df9fed9f9f8aafe470eb40d5ae9e43b2b7f
+MD5sum: 0c367796818c3977e12187aac514b50f
+Description: Lenovo ThinkPad Dock Daemon
+ This tools allows you to switch X modes
+ automatically when you undock your ThinkPad.
+
+Package: libthinkpad-dev
+Source: libthinkpad
+Version: 2.3-1ubuntu0~artful
+Architecture: amd64
+Maintainer: Ognjen Galic <smclt30p@gmail.com>
+Installed-Size: 31
+Depends: libthinkpad1 (= 2.3-1ubuntu0~artful), libudev-dev (>= 229), libsystemd0 (>= 229)
+Homepage: http://www.thinkpads.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/libt/libthinkpad/libthinkpad-dev_2.3-1ubuntu0~artful_amd64.deb
+Size: 5992
+SHA256: d3bd7f1ae8b105c638cefc17fd67d49623ba0735f2fba85ea9e9eaceef5f38e2
+SHA1: 0a630307626b88ec4f57bf911d46af4c0207fc4a
+MD5sum: a706189800665453872bd912d6789d29
+Description: ThinkPad Userspace Libraries - headers
+ This is the development package for the Lenovo ThinkPad
+ userspace tools provided by http://www.thinkpads.org/
+
+Package: libthinkpad1
+Source: libthinkpad
+Version: 2.3-1ubuntu0~artful
+Architecture: amd64
+Maintainer: Ognjen Galic <smclt30p@gmail.com>
+Installed-Size: 64
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libsystemd0 (>= 229), libudev1 (>= 229)
+Homepage: http://www.thinkpads.org/
+Priority: optional
+Section: libs
+Filename: pool/main/libt/libthinkpad/libthinkpad1_2.3-1ubuntu0~artful_amd64.deb
+Size: 17164
+SHA256: ea1109dfb16e0336fae0d93212402db1c86f887113a0d50ea34622e70410667e
+SHA1: 16c3bea99f56496459767a32194aed6ba8d610ba
+MD5sum: c09ee316d127b5d1ca0a19cc77d212a2
+Description: ThinkPad Userspace Libraries
+ This is the main user space library for Lenovo
+ ThinkPad laptops provided by http://www.thinkpads.org.
+

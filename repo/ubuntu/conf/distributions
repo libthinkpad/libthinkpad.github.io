@@ -5,3 +5,20 @@ Architectures: i386 amd64 source
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
 SignWith: ABD1A026 
+
+Origin: ThinkPad Userspace Tools
+Label: Thinkpad Userspace Tools
+Codename: artful
+Architectures: i386 amd64 source
+Components: main
+Description: Apt repository for the ThinkPad Userspace Tools
+SignWith: ABD1A026
+
+Origin: ThinkPad Userspace Tools
+Label: Thinkpad Userspace Tools
+Codename: zesty
+Architectures: i386 amd64 source
+Components: main
+Description: Apt repository for the ThinkPad Userspace Tools
+SignWith: ABD1A026
+
