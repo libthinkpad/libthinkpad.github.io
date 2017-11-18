@@ -1,7 +1,7 @@
 Origin: ThinkPad Userspace Tools
 Label: Thinkpad Userspace Tools
 Codename: xenial
-Date: Fri, 17 Nov 2017 17:34:36 UTC
+Date: Sat, 18 Nov 2017 10:50:09 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
@@ -9,20 +9,20 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
- bcfecd625e3e67fcadf753f5223cc106 2065 main/binary-amd64/Packages
- 0187b9d81de9386f4bab03fe72230612 959 main/binary-amd64/Packages.gz
+ c2357c22ba939c8a64b36e16ec5c0ac9 1892 main/binary-amd64/Packages
+ e19da003981f1a940074e7594f1f0e5e 817 main/binary-amd64/Packages.gz
  7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
- f6ea9dd0a4020b077a0740aa846e2a48453f40ee 2065 main/binary-amd64/Packages
- 10ceb0e466406b5a3f33e90ee7ac5bbe5e3250b1 959 main/binary-amd64/Packages.gz
+ c73963af970c62eb98a5bac8fd1e779cab1ee037 1892 main/binary-amd64/Packages
+ 06c970703ecf99caa3a12b0544ec9bb4b4fe8a54 817 main/binary-amd64/Packages.gz
  6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
- 69b577ffad95ca9f61ea88b4ec33c92665b6ac240f40f3b40c2b154069cb3b86 2065 main/binary-amd64/Packages
- c065d2499066f4c06b203ee086d7d04df9e45e7b592d175983ed6821bc20534b 959 main/binary-amd64/Packages.gz
+ 75b2f635d05ade0c25dfad5ef85fda071ab14028f1275f4a300edc769db71875 1892 main/binary-amd64/Packages
+ 26003781f4ec42170183b1c06ffe71bc18e6bdde3fb9679561b3328946180c92 817 main/binary-amd64/Packages.gz
  9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
