@@ -8,10 +8,10 @@ Homepage: http://www.thinkpads.org/
 Priority: optional
 Section: utils
 Filename: pool/main/d/dockd/dockd_1.20-1_amd64.deb
-Size: 11356
-SHA256: 0217ed8cb2b6226123b4acb4b2a92c94c631cbbd61ba1a896ffdc6dac1c5b294
-SHA1: 8a5683eb452a5eae33ddd1c4f0ad1938a2b30cad
-MD5sum: 043b040299ed95ebfb96e33318852a5c
+Size: 11354
+SHA256: 43b58c02dec02a1773d4e2646a5973aa6f1182a008cfee50a0667efb52c353f5
+SHA1: ade80ca0e54c316d24b063faf5d26ca9361dac57
+MD5sum: ba7d22914f2c81a6f6c9c0aee748b24b
 Description: Lenovo ThinkPad Dock Daemon
  This tools allows you to switch X modes
  automatically when you undock your ThinkPad.
