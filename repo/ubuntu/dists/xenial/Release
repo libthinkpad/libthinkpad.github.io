@@ -1,7 +1,7 @@
 Origin: ThinkPad Userspace Tools
 Label: Thinkpad Userspace Tools
 Codename: xenial
-Date: Sat, 18 Nov 2017 11:23:30 UTC
+Date: Sat, 18 Nov 2017 13:55:07 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
@@ -9,20 +9,29 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
- f5b579349e67acab3bf5a0e92cd5998a 1892 main/binary-amd64/Packages
- ea24974dcdb3d87cdbb0b9c4edbcd6ef 819 main/binary-amd64/Packages.gz
+ d89e2c7fc5750d2bc694781acbc511c3 2089 main/binary-amd64/Packages
+ b87aabd0210eb8ec003e540b95e300ab 888 main/binary-amd64/Packages.gz
  7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
+ 12395ccd552e36bae6752fc169629acc 2452 main/source/Sources
+ c6ef584460b81377fd8ca2fedd0e0d6a 1036 main/source/Sources.gz
+ f96f6326bb6337ada111c98fbf25bf8d 163 main/source/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
- 7ef61c364522c97e7d3b717cc0b872c4beec2acb 1892 main/binary-amd64/Packages
- 6ab5ad96b85f95d28342a8985debc5d48322891e 819 main/binary-amd64/Packages.gz
+ e8437758d3e35b55c1ca066a8669f8cfa97fb4d0 2089 main/binary-amd64/Packages
+ bd2b965832bf0fb4116488ee4419e16507379b9c 888 main/binary-amd64/Packages.gz
  6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
+ 7db575059a0d5033bcfad5f0b6a3f932038d3df9 2452 main/source/Sources
+ 23356d1a665b28cf814270a293154248571b5ce2 1036 main/source/Sources.gz
+ d56c1bb50bb70a6ba7699841f2082c4518d9a0d8 163 main/source/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
- e998446e6269f5b64bea103261c181098bd046b00b8b5fae58f4f963dda67a2a 1892 main/binary-amd64/Packages
- 1c58f6c8f6e31ffe56ca922f94dc3578422dad03e5cc8ef713f7b5a2c9a567c5 819 main/binary-amd64/Packages.gz
+ 733eeeeec10f870d1bdc6ecad7b4f94d2d398b5aed43ecb0e5e01643a03b2d97 2089 main/binary-amd64/Packages
+ 786e060d53053eceed12cc703092261329d031880104a1443f0d5c43f238042f 888 main/binary-amd64/Packages.gz
  9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
+ 5822f5b905d70fd4748b2ed8ddc432a0fb826fdcdb216510462471744bb4155a 2452 main/source/Sources
+ d995b741b64b6481cfd1f13598faea5c9219486d68a6d09e9cd85dae423036dc 1036 main/source/Sources.gz
+ 56a46985ce4ec8b7893ec8cadf83e07e5d7bef01af417f40883827bbe4b1b7dc 163 main/source/Release
