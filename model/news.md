@@ -1,3 +1,11 @@
+## Added support for Ubuntu 16.10 Yakkety Yak!
+
+Somehow we overlooked Yakkety Yak when packaing for Ubuntu. Official repositories for Yakkety Yak are available    
+on the [repositories][/repositories] page.
+    
+Author: Ognjen Galić <smclt30p@gmail.com>    
+Date: 19th November 2017  
+
 ## New website design!
 
 The site has been redesigned and the original Doxygen webpage has moved to the documentation of the libthinkpad library.    
