@@ -1,0 +1,62 @@
+#logo {
+    height: 50px;
+}
+
+body {
+    background: #fefff1;
+}
+
+#navigation {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#header-cont {
+   border-bottom: 1px solid #d2d2d2; 
+}
+
+#body-wrap {
+    margin-left: 25px;
+}
+
+code {
+    background: #f1f1f1;
+    display: inline-block;
+    padding: 3px;
+    font-size: 11;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+body {
+    min-width: 1100px;
+}
+
+#footer-container {
+    margin: 20px auto 0 auto;
+}
+
+.github-logo {
+    width: 100px;
+}
+
+#footer-container p {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+}
+
+footer {
+    border-top: 1px solid #d2d2d2;
+}
+
+#github-logo-cont {
+    width: 100px;
+    margin: 0 auto;
+}
