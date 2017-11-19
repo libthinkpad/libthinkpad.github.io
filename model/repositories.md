@@ -17,7 +17,7 @@ That includes:
 To use them, first add the ThinkPads.org owner's GPG key:    
 
 
-`wget -q -O - https://thinkpads.org/repo/ubuntu/thinkpads.gpg.key | sudo apt-key add - `   
+`wget -q -O - http://thinkpads.org/repo/ubuntu/thinkpads.gpg.key | sudo apt-key add - `   
    
 Next, use one of the repositories provided:
 
