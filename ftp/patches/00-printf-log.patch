@@ -1,0 +1,171 @@
+diff --git a/crtc.cpp b/crtc.cpp
+index 4ce0116..55d8e48 100644
+--- a/crtc.cpp
++++ b/crtc.cpp
+@@ -35,12 +35,12 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+     /* Step 0 */
+ 
+     if (access(CONFIG_LOCATION_DOCKED, R_OK) != 0) {
+-        syslog(LOG_ERR, "Can't open config file %s, aborting\n", CONFIG_LOCATION_DOCKED);
++        fprintf(stderr, "Can't open config file %s, aborting\n", CONFIG_LOCATION_DOCKED);
+         return false;
+     }
+ 
+     if (access(CONFIG_LOCATION_UNDOCKED, R_OK) != 0) {
+-        syslog(LOG_ERR, "Can't open config file %s, aborting\n", CONFIG_LOCATION_UNDOCKED);
++        fprintf(stderr, "Can't open config file %s, aborting\n", CONFIG_LOCATION_UNDOCKED);
+         return false;
+     }
+ 
+@@ -63,7 +63,7 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+     vector<IniSection*> configControllers = config.getSections("CRTC");
+ 
+     if (configControllers.size() < resources->ncrtc) {
+-        syslog(LOG_ERR, "Not enough CRT controllers to set config, aborting\n");
++        fprintf(stderr, "Not enough CRT controllers to set config, aborting\n");
+         return false;
+     }
+ 
+@@ -86,7 +86,7 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+     }
+ 
+     if (matched != resources->ncrtc) {
+-        syslog(LOG_ERR, "CRTC map changed, please re-run the configuration utlity\n");
++        fprintf(stderr, "CRTC map changed, please re-run the configuration utlity\n");
+         return false;
+     }
+ 
+@@ -126,7 +126,7 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+ 
+ 
+         if (configs.error != 0) {
+-            syslog(LOG_ERR, "Mode lookup error: %s\n", strerror(-configs.error));
++            fprintf(stderr, "Mode lookup error: %s\n", strerror(-configs.error));
+             isControllerConfigValid = false;
+             break;
+         }
+@@ -152,7 +152,7 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+     /* Apply the configs */
+ 
+     if (!isControllerConfigValid) {
+-        syslog(LOG_ERR, "Controller config is not valid, not committing changes to X\n");
++        fprintf(stderr, "Controller config is not valid, not committing changes to X\n");
+         return false;
+     }
+ 
+@@ -160,12 +160,12 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+ 
+     for (CRTConfig *controller : controllerConfigs) {
+ 
+-        syslog(LOG_INFO, "Applying config to %4lu: mode: %4lu, outputs: %4zu, x: %4d, y: %4d\n",
++        printf( "Applying config to %4lu: mode: %4lu, outputs: %4zu, x: %4d, y: %4d\n",
+                controller->crtc, controller->mode, controller->noutputs, controller->x, controller->y);
+ 
+ #ifndef DRYRUN
+ 
+-        XRRSetCrtcConfig(display,
++        Status s = XRRSetCrtcConfig(display,
+                          resources,
+                          controller->crtc,
+                          CurrentTime,
+@@ -176,6 +176,10 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+                          controller->outputs,
+                          (int) controller->noutputs); // cast: stack smashing: size_t (ul) copy into noutputs: int (d)
+ 
++        if (s != RRSetConfigSuccess) {
++            fprintf(stderr, "Error setting config!\n");
++        }
++
+ #endif // DRYRUN
+ 
+         free(controller->outputs);
+@@ -197,7 +201,7 @@ bool CRTControllerManager::applyConfiguration(CRTControllerManager::DockState st
+     int mm_height = screenSection->getInt("mm_height");
+     int mm_width = screenSection->getInt("mm_width");
+ 
+-    syslog(LOG_INFO, "Setting screen size: height: %d, width: %d\n", height, width);
++    printf( "Setting screen size: height: %d, width: %d\n", height, width);
+ 
+ #ifndef DRYRUN
+ 
+@@ -285,7 +289,7 @@ bool CRTControllerManager::writeConfigToDisk(CRTControllerManager::DockState sta
+         }
+ 
+         if (!modeFound) {
+-            syslog(LOG_ERR, "Failed to find output mode name!\n");
++            fprintf(stderr, "Failed to find output mode name!\n");
+             return false;
+         }
+ 
+@@ -351,7 +355,7 @@ CRTControllerManager::OutputConfigs CRTControllerManager::getOutputConfigs(vecto
+         int attempts = 0;
+ 
+         while ((output = getRROutputByName(configOutput)) == ((XID) -EAGAIN)) {
+-            syslog(LOG_ERR, "Trying to find (%s) again: (%s)\n", configOutput, strerror(EAGAIN));
++            fprintf(stderr, "Trying to find (%s) again: (%s)\n", configOutput, strerror(EAGAIN));
+             /* Wait for the hardware to sanitize */
+             usleep(250000);
+             if (resources) {
+@@ -366,7 +370,7 @@ CRTControllerManager::OutputConfigs CRTControllerManager::getOutputConfigs(vecto
+         }
+ 
+         if (output == None) {
+-            syslog(LOG_ERR, "Error: output from config (%s) not found on this machine\n", configOutput);
++            fprintf(stderr, "Error: output from config (%s) not found on this machine\n", configOutput);
+             configs.error = -ENODEV;
+             return configs;
+         }
+@@ -379,7 +383,7 @@ CRTControllerManager::OutputConfigs CRTControllerManager::getOutputConfigs(vecto
+ 
+         while ((configMode = getRRModeByNameSupported(configOutputMode, output)) == ((XID) -EAGAIN)) {
+ 
+-            syslog(LOG_ERR, "Trying to find (%s) again: (%s)\n", configOutputMode, strerror(EAGAIN));
++            fprintf(stderr, "Trying to find (%s) again: (%s)\n", configOutputMode, strerror(EAGAIN));
+ 
+             if (attempts > 10) {
+                 configMode = None;
+@@ -400,7 +404,7 @@ CRTControllerManager::OutputConfigs CRTControllerManager::getOutputConfigs(vecto
+         }
+ 
+         if (configMode == None) {
+-            syslog(LOG_ERR, "Output mode %s not found for output %s\n", configSection->getString("mode"), configOutput);
++            fprintf(stderr, "Output mode %s not found for output %s\n", configSection->getString("mode"), configOutput);
+             configs.error = -ENODEV;
+             return configs;
+         }
+@@ -408,7 +412,7 @@ CRTControllerManager::OutputConfigs CRTControllerManager::getOutputConfigs(vecto
+         if (configs.mode == None) {
+             configs.mode = configMode;
+         } else if (configMode != configs.mode) {
+-            syslog(LOG_ERR, "Mode mismatch between monitors, did you change monitors? Re-run the config.\n");
++            fprintf(stderr, "Mode mismatch between monitors, did you change monitors? Re-run the config.\n");
+             configs.error = -ENODEV;
+             configs.mode = None;
+             return configs;
+@@ -418,7 +422,7 @@ CRTControllerManager::OutputConfigs CRTControllerManager::getOutputConfigs(vecto
+     }
+ 
+     if (configs.mode == None && configs.outputs.size() > 0) {
+-        syslog(LOG_ERR, "runtime error\n");
++        fprintf(stderr, "runtime error\n");
+     }
+ 
+     return configs;
+@@ -447,7 +451,7 @@ void CRTControllerManager::connectToX() {
+     display = XOpenDisplay(NULL);
+ 
+     if (!display) {
+-        syslog(LOG_ERR, "Error opening display!\n");
++        fprintf(stderr, "Error opening display!\n");
+         exit(EXIT_FAILURE);
+     }
+ 
+@@ -457,7 +461,7 @@ void CRTControllerManager::connectToX() {
+     resources = XRRGetScreenResources(display, window);
+ 
+     if (!resources) {
+-        syslog(LOG_ERR, "Failed to get resources!\n");
++        fprintf(stderr, "Failed to get resources!\n");
+         exit(EXIT_FAILURE);
+     }
+ 
