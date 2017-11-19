@@ -196,7 +196,7 @@ There is NO WARRANTY, to the extent permitted by law.
 Written by Ognjen Galic
 See --help for more information
 ```
-__5) Create the needed directories
+__5) Create the needed directories__
 
 * `sudo mkdir /etc/dockd`
     
