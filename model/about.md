@@ -3,7 +3,7 @@ just a little bit more enjoyable.
 
 ## Meet the people
 
-### <img src="/res/bosnia.png"/> &nbsp; Ognjen Galić
+### <img title="Bosnia and Herzegovina" src="/res/bosnia.png"/> &nbsp; Ognjen Galić
 
 ![me](/res/me.jpg) 
 
@@ -17,7 +17,7 @@ He is 18 years old and is from Banja Luka, Bosnia and Herzegovina.
 Contact: <smclt30p@gmail.com>
 
 
-### <img src="/res/italy.png"/> &nbsp; smlb   
+### <img title="Italy" src="/res/italy.png"/> &nbsp; smlb   
 
 smlb is on of the testers and the maintainer of the Arch Linux AUR    
 packages. He is the first to test dockd on Mini Dock Series 3 with    
