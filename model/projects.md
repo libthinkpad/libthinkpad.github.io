@@ -30,6 +30,8 @@ provides advanced features to software projects using it specific to Lenovo Thin
 
 This was created to avoid manual crawling of sysfs entries and udev rule filterings by each executable individually.     
 All ThinkPads.org use this library in some way.
+
+[Doxygen documentation](/projects/libthinkpad)
     
 Latest version: 2.3      
 Developer: Ognjen Galić <smclt30p@gmail.com>    
