@@ -19,7 +19,7 @@ Contact: <smclt30p@gmail.com>
 
 ### <img title="Italy" src="/res/italy.png"/> &nbsp; smlb   
 
-smlb is on of the testers and the maintainer of the Arch Linux AUR    
+smlb is one of the testers and the maintainer of the Arch Linux AUR    
 packages. He is the first to test dockd on Mini Dock Series 3 with    
 an X230 and report back bugs.    
 
