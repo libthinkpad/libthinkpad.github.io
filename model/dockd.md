@@ -12,6 +12,7 @@ and it automatically switches output mode profiles that you have configured befo
 - [How to install dockd?](#howtoinstalldockd)
 - [How to use dockd?](#howtousedockd)
 - [What if I change the monitor I used to configure the dock?](#whatifichangethemonitoriusedtoconfigurethedock)
+- [Changelog](#changelog)
 
 ---
 
@@ -271,5 +272,10 @@ config file written to /etc/dockd/docked.conf
 ```
 
 Now, log out and log back in and everything should work normally.
+
+## Changelog
+
+__*What's new in version 1.20*__
+* First public releae
 
 [Back to top](#)
