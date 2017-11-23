@@ -1,0 +1,33 @@
+diff --git a/src/libthinkpad.cpp b/src/libthinkpad.cpp
+index 17ff427..349c895 100644
+--- a/src/libthinkpad.cpp
++++ b/src/libthinkpad.cpp
+@@ -283,6 +283,14 @@ namespace ThinkPad {
+                     event = ACPIEvent::BUTTON_FNF12_SUSPEND;
+                 }
+ 
++                if (strstr(buf, ACPI_DOCK_EVENT) != NULL) {
++                    event = ACPIEvent::DOCKED;
++                }
++
++                if (strstr(buf, ACPI_UNDOCK_EVENT) != NULL) {
++                    event = ACPIEvent::UNDOCKED;
++                }
++
+                 for (ACPIEventHandler* Acpihandler : *acpiClass->ACPIhandlers) {
+ 
+                     pthread_t handler;
+diff --git a/src/libthinkpad.h b/src/libthinkpad.h
+index ea33a9e..26b52fc 100644
+--- a/src/libthinkpad.h
++++ b/src/libthinkpad.h
+@@ -46,6 +46,9 @@
+ #define ACPI_LID_OPEN "button/lid LID open"
+ #define ACPI_LID_CLOSE "button/lid LID close"
+ 
++#define ACPI_DOCK_EVENT "ibm/hotkey LEN0068:00 00000080 00004010"
++#define ACPI_UNDOCK_EVENT "ibm/hotkey LEN0068:00 00000080 00004011"
++
+ #define ACPI_BUTTON_BRIGHTNESS_UP "video/brightnessup BRTUP"
+ #define ACPI_BUTTON_BRIGHTNESS_DOWN "video/brightnessdown BRTDN"
+ #define ACPI_BUTTON_VOLUME_UP "button/volumeup VOLUP"
