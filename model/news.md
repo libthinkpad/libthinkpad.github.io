@@ -1,3 +1,11 @@
+## Added support for the Mini Dock Series 3 in dockd!
+
+A new version of libthinkpad has been released that fixes dock detection    
+for the Mini Dock Series 3 dock for various models. Get the new version now!   
+ 
+Author: Ognjen Galić <smclt30p@gmail.com>    
+Date: 23rd November 2017   
+
 ## Added support for Ubuntu 16.10 Yakkety Yak!
 
 Somehow we overlooked Yakkety Yak when packaing for Ubuntu. Official repositories for Yakkety Yak are available    
