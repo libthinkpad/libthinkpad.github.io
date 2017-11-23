@@ -20,7 +20,7 @@ He is 18 years old and is from Banja Luka, Bosnia and Herzegovina.
 
 ### <img title="Italy" src="/res/italy.png"/> &nbsp; smlb   
 
-![smlb](https://avatars2.githubusercontent.com/u/1296943?s=200&v=4) 
+<img style="width: 200px" src="https://i.imgur.com/vX4B9PY.png/">
 
 smlb is one of the testers and the maintainer of the Arch Linux AUR    
 packages. He is the first to test dockd on Mini Dock Series 3 with    
