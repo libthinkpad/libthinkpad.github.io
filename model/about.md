@@ -43,4 +43,5 @@ examples and helped in fixing bugs on the Mini Dock 3 alongside smlb.
 He is the author of arch-audit, the security auditing tool for Arch Linux.    
 
 ![irc](/res/irc.png): __ilpianista__ on Freenode      
-![github](/res/github_icon.png): [ilpianista](https://www.github.com/ilpianista)
+![github](/res/github_icon.png): [ilpianista](https://www.github.com/ilpianista)     
+![web](/res/web.png): [https://andreascarpino.it/](https://andreascarpino.it/)     
