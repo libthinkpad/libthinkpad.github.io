@@ -197,16 +197,16 @@ There is NO WARRANTY, to the extent permitted by law.
 Written by Ognjen Galic
 See --help for more information
 ```
-__6) Install `acpid`__
+__5) Install `acpid`__
 
 In order for dockd to support docks such as the MiniDock Series 3, you need
 `acpid` to support it.
 
-__5) Create the needed directories__
+__6) Create the needed directories__
 
 * `sudo mkdir /etc/dockd`
     
-__6) Dockd is now installed__
+__7) Dockd is now installed__
     
 ## How to use dockd?
 
