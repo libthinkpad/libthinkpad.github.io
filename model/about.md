@@ -32,8 +32,8 @@ He is from Italy.
 ![github](/res/github_icon.png): [smlb](https://www.github.com/smlb)
 
 ### <img title="Italy" src="/res/italy.png"/> &nbsp; Andrea Scarpino  
-   
-![ilpianiasta](https://avatars2.githubusercontent.com/u/529436?s=200&v=4)   
+
+<img style="width: 200px" src="https://andreascarpino.it/images/andreascarpino.jpg">   
 
 *(aka. ilpianista)*
 
