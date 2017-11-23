@@ -18,38 +18,38 @@ Description: Lenovo ThinkPad Dock Daemon
 
 Package: libthinkpad-dev
 Source: libthinkpad
-Version: 2.3-1ubuntu0~zesty
+Version: 2.4-1ubuntu1~zesty
 Architecture: amd64
 Maintainer: Ognjen Galic <smclt30p@gmail.com>
 Installed-Size: 31
-Depends: libthinkpad1 (= 2.3-1ubuntu0~zesty), libudev-dev (>= 229), libsystemd0 (>= 229)
+Depends: libthinkpad1 (= 2.4-1ubuntu1~zesty), libudev-dev (>= 229), libsystemd0 (>= 229)
 Homepage: http://www.thinkpads.org/
 Priority: optional
 Section: libdevel
-Filename: pool/main/libt/libthinkpad/libthinkpad-dev_2.3-1ubuntu0~zesty_amd64.deb
-Size: 5990
-SHA256: f2b7dc44c11409c6be88aa78d985f62ae961d7d963629e54e2ef44bf797b57c2
-SHA1: 71db9b729b91b0c4babc69a5e09a69752fcd6449
-MD5sum: c8a06009d8f2b5196118d1e48796035f
+Filename: pool/main/libt/libthinkpad/libthinkpad-dev_2.4-1ubuntu1~zesty_amd64.deb
+Size: 6108
+SHA256: ed319fc289253d799e5e5a6c1c3e8a747a272a0ae4593569b5eea3d31f646c55
+SHA1: c3a8a1a74a40001fa863448923c2eea6e669fbc8
+MD5sum: 341a5a17d066a16e045e28c2018db77f
 Description: ThinkPad Userspace Libraries - headers
  This is the development package for the Lenovo ThinkPad
  userspace tools provided by http://www.thinkpads.org/
 
 Package: libthinkpad1
 Source: libthinkpad
-Version: 2.3-1ubuntu0~zesty
+Version: 2.4-1ubuntu1~zesty
 Architecture: amd64
 Maintainer: Ognjen Galic <smclt30p@gmail.com>
 Installed-Size: 64
-Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libsystemd0 (>= 229), libudev1 (>= 229)
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libsystemd0 (>= 229), libudev1 (>= 229), acpid
 Homepage: http://www.thinkpads.org/
 Priority: optional
 Section: libs
-Filename: pool/main/libt/libthinkpad/libthinkpad1_2.3-1ubuntu0~zesty_amd64.deb
-Size: 17162
-SHA256: cbc368cd6357c9e1666cc490ec61e3fc4032c8fd720803d18fdbc61773be97ce
-SHA1: a2573a1037fe1c29539e2994b78b2f5eefec2f30
-MD5sum: 24a508c09158f021a22ed22ecd32d304
+Filename: pool/main/libt/libthinkpad/libthinkpad1_2.4-1ubuntu1~zesty_amd64.deb
+Size: 17300
+SHA256: 7889409867527511968ef3700b13101a6909328e2bee253e838acf2c43d64f9f
+SHA1: 9d31e3cacea40613284687a5e3c6423e485627d8
+MD5sum: 5449ed29a303babb1c4f866d52e2224a
 Description: ThinkPad Userspace Libraries
  This is the main user space library for Lenovo
  ThinkPad laptops provided by http://www.thinkpads.org.

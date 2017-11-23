@@ -1,7 +1,7 @@
 Origin: ThinkPad Userspace Tools
 Label: Thinkpad Userspace Tools
 Codename: yakkety
-Date: Sun, 19 Nov 2017 17:34:59 UTC
+Date: Thu, 23 Nov 2017 20:57:23 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
@@ -9,29 +9,29 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
- 7fd39be07c4f0dfd9e00a36952afe98c 2161 main/binary-amd64/Packages
- 73dccd95822cdcf281f69d4b1e4e2e62 905 main/binary-amd64/Packages.gz
+ e2708de0ccc12ee58c042add583c4ac9 2168 main/binary-amd64/Packages
+ 70ee6a95f1b4300c8b2f4d114ffeb676 906 main/binary-amd64/Packages.gz
  7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
- 82ac787af68d76c3c2d0b062a16f50f5 2608 main/source/Sources
- 09a6418000c922d23bd6561e694c0388 1069 main/source/Sources.gz
+ 375752a629b6d9f194df7f2472387134 2608 main/source/Sources
+ 56400d9e1788c8c374c28aec4a5203ac 1064 main/source/Sources.gz
  f96f6326bb6337ada111c98fbf25bf8d 163 main/source/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
- 4151600939c8f7e58a71cdc05908d5da4ad4944f 2161 main/binary-amd64/Packages
- 0ee89466d58210cb68966cb981df5e56d3dc49c7 905 main/binary-amd64/Packages.gz
+ d90b1b94cb76852a022c406c44dd8c1bb0011d14 2168 main/binary-amd64/Packages
+ 320282c5b9d3aa86713d9eb74f18e8906bea6d61 906 main/binary-amd64/Packages.gz
  6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
- a1b02f2af121244759a97b5e4873ad1abe31ba94 2608 main/source/Sources
- 2a684d16ba0d0123e52abc309cf83295528d3b70 1069 main/source/Sources.gz
+ 309dc0bbbee98101ca351fd0b9a72d804f9199e1 2608 main/source/Sources
+ 127bf89428f6937580c4cb732c159f8a50d2ac1d 1064 main/source/Sources.gz
  d56c1bb50bb70a6ba7699841f2082c4518d9a0d8 163 main/source/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
- 0fc6f7b17c3d84a2bdcdccc1c34119159db390371964cfea6e96487cdd0d0c28 2161 main/binary-amd64/Packages
- e70b7c4a8cec5b8e0f560535297930c2b6506539a62602829ba62a82d67378dd 905 main/binary-amd64/Packages.gz
+ 02bafae213b5192bb316b8ada678c7f9c1d112440d8d29abf8d958b3a1466058 2168 main/binary-amd64/Packages
+ 77e195b02d26fd1d364d64a3454fac0d349529da6950bf24ed487605e684048f 906 main/binary-amd64/Packages.gz
  9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
- 0de6041813e3a8db98345c452a1626db2315b55f2b1290ca751cf1c1060a099d 2608 main/source/Sources
- 103e4610af42ecf0c844263b0dec65186b4bcf6ca504813cc93583f2c098bac3 1069 main/source/Sources.gz
+ d5fafdbfb2b39ae173b59f5c2516dc79b65b193b7fd92330544aec267bc5f26e 2608 main/source/Sources
+ 20bc4d68b3f1251dc923a2d05ad9e88b02e9a8a41195777982d8f38b093c608d 1064 main/source/Sources.gz
  56a46985ce4ec8b7893ec8cadf83e07e5d7bef01af417f40883827bbe4b1b7dc 163 main/source/Release
