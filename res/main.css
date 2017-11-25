@@ -1,9 +1,27 @@
+* {
+    font-family: sans-serif;
+}
+
 #logo {
     height: 50px;
+    margin-left: 20px;
 }
 
 body {
     background: #fefff1;
+}
+
+p, li {
+    font-family: sans-serif;
+    font-size: 0.875em;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.25em;
 }
 
 #navigation {
@@ -32,6 +50,7 @@ code {
     border: 1px solid #d2d2d2;
     border-radius: 3px;
     margin: 2px;
+    font-family: monospace;
 }
 
 body {
