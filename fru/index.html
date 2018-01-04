@@ -18,7 +18,7 @@
             <input oninput="perform_search(this)" id="search">
             <button onclick="clear_search()">Clear</button>
             <p class="status">Loading...</p>
-            <table class="fru-table" id="fru-table-main">
+            <table class="fru-table alternate" id="fru-table-main">
                     <tr>
                         <th class="fru-model">Model</th>
                         <th class="ass">LCD assembly diagram</th>
@@ -43,17 +43,11 @@
                 <img usemap="#hotspots-lcd" class="body-diagram">
                 <img usemap="#hotspots-main" class="body-diagram">
                 
-<!--
-                <map name="hotspots">
-                  <area shape="rect" coords="584,8,610,31">
-                </map>
--->
-                
             </div>
             
             <button onclick="clear_search()">Clear filters</button>
             <button onclick="window.close()">Close</button>
-            <table class="fru-table" id="fru-table-parts">
+            <table class="fru-table alternate" id="fru-table-parts">
                 
                 <col width="8%">
                 <col width="35%">
