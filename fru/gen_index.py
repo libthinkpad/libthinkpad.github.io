@@ -40,7 +40,7 @@ def main():
             "name": "ThinkPad {}".format(product),
             "lcd_ass": sch_main,
             "main_ass": sch_lcd,
-            "res_file": "/fru/{}".format(file.name)
+            "res_file": "{}".format(file.name).replace(".json", "").replace("raw/", "")
         })
 
         if i == len(dirs):
