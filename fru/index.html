@@ -61,6 +61,8 @@
                     <th><input id="sr-fru" oninput="perform_multisearch()"></th>
                     <th><input id="sr-title" oninput="perform_multisearch()"></th>
                     <th><input id="sr-cls" oninput="perform_multisearch()"></th>
+                    <th><input id="sr-pic" onchange="perform_multisearch()" type="checkbox"></th>
+                    <th><input id="sr-price"  onchange="perform_multisearch()" type="checkbox"></th>
                 </tr>    
                 <tr>
                         <th>FRU</th>
@@ -359,8 +361,10 @@
             var fru_text = document.getElementById("sr-fru").value;
             var title_text = document.getElementById("sr-title").value;
             var class_text = document.getElementById("sr-cls").value;
+            var pic_state = document.getElementById("sr-pic").checked;
+            var price_state = document.getElementById("sr-price").checked;
 
-            if (fru_text == "" && title_text == "" && class_text == "") {
+            if (fru_text == "" && title_text == "" && class_text == "" && !pic_state && !price_state) {
                 if (frudata != null) {
                     display_data_data(frudata);
                 }
@@ -372,6 +376,8 @@
             var fru_s = true;
             var title_s = true;
             var class_s = true;
+            var pic_check = true;
+            var price_check = true;
             
             for (let i = 0; i < frudata.length; i++) {
                 
@@ -389,13 +395,18 @@
                     class_s = false;
                 }
                 
-                if (fru_s && title_s && class_s) {
+                pic_check = !(pic_state && part["Images"].length == 0);
+                price_check = !(price_state && part["Price"]["DisplayPrice"] == "IsExpired");
+                
+                if (fru_s && title_s && class_s && pic_check && price_check) {
                     results.push(part);
                 }
                 
                 fru_s = true;
                 title_s = true;
                 class_s = true;
+                pic_check = true;
+                price_check = true;
                 
             }
             
