@@ -136,3 +136,18 @@ th input {
 #img-main {
      overflow: hidden;   
 }
+
+.diagram-link {
+    font-size: 0.875em;
+    text-decoration: underline;
+    color: #0f47ef;
+    cursor: pointer;
+}
+
+.body-diagram {
+    margin-right: 20px;
+}
+
+.parts-table {
+    float: left;
+}
