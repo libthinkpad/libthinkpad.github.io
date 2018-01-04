@@ -296,6 +296,8 @@
                     
                     var dataJs = JSON.parse(data);
                     frudata = dataJs["SchematicParts"];
+                    if (frudata.length == 0) 
+                        frudata = dataJs["MTResult"]["PartsList"]
                     display_body_diagrams(dataJs["SchematicResults"])
                     display_data_data(frudata);
                 })

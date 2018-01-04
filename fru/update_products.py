@@ -4,7 +4,9 @@ import demjson
 
 # 11e (Type 20E6, 20E8) Laptop (ThinkPad) - Type 20E8
 # 11e (Type 20ED, 20EE) Laptop (ThinkPad) - Type 20EE
+import os
 import requests
+import simplejson
 
 
 class ThinkPad:
@@ -65,7 +67,7 @@ def main():
 
     print("Parsing response....")
 
-    json = demjson.decode(json[0])
+    json = simplejson.loads(json[0])
 
     for product in json:
         id = product["Id"]
@@ -93,6 +95,11 @@ def main():
 
     for thinkpad in thinkpads:
         i += 1
+
+        if os.path.exists("raw/{}.json".format(thinkpad.getRealName()).replace(" ", "")):
+            print("({}/{}) Skipping ThinkPad {}".format(i, l, thinkpad.getRealName()))
+            continue
+
         print("({}/{}) Saving ThinkPad {} ({})".format(i,l,thinkpad.getRealName(), thinkpad.id))
         url = "https://pcsupport.lenovo.com/us/en/products/{}/Parts?isaccessory=false".format(thinkpad.id)
 
