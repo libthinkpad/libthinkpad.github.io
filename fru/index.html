@@ -33,6 +33,24 @@
         <div id="body-fru-data" class="body-wrap-fru" style="display: none">
             <h1 id="body-fru-data-title">FRU/System service parts index for ThinkPad </h1>
             <p class="status">Loading, this could take a while...</p>
+            
+            <p id="show-diags" style="display: none" onclick="diagram_fold(this)" class="diagram-link">+ Body diagrams</p>
+            
+            <div id="diagram-fold" style="display: none">
+                
+                <p>Click the numbers to filter the parts</p>
+                
+                <img usemap="#hotspots-lcd" class="body-diagram">
+                <img usemap="#hotspots-main" class="body-diagram">
+                
+<!--
+                <map name="hotspots">
+                  <area shape="rect" coords="584,8,610,31">
+                </map>
+-->
+                
+            </div>
+            
             <button onclick="clear_search()">Clear filters</button>
             <button onclick="window.close()">Close</button>
             <table class="fru-table" id="fru-table-parts">
@@ -205,7 +223,9 @@
             document.getElementById("sr-cls").value = "";
             perform_multisearch();
             document.getElementById("search").value = "";
-            display_data_model(models);
+            if (models != null) {
+                display_data_model(models);
+            }
         }
         
         function get_url_tp_model() {
@@ -278,12 +298,66 @@
                 http_get("/res/fru-data-tr.html", function(template) {
                     template_html_data = template;
                     
-                        var dataJs = JSON.parse(data);
-                        frudata = dataJs["MTResult"]["PartsList"];
-                    
+                    var dataJs = JSON.parse(data);
+                    frudata = dataJs["SchematicParts"];
+                    display_body_diagrams(dataJs["SchematicResults"])
                     display_data_data(frudata);
                 })
             })
+        }
+        
+        function display_body_diagrams(diagrams) {
+            
+            var diagram = null;
+            var count = 0;
+            var diagram_cont = document.getElementById("diagram-fold");
+            
+            for (let i = 0; i < diagrams.length; i++) {
+                diagram = diagrams[i];
+                count++;
+                
+                /* Add the diagram to the DOM */
+                
+                var elem = document.createElement("img");
+                elem.setAttribute("usemap", "#hotspots-" + i);
+                elem.setAttribute("src", diagram["Schematic"]["Picture"])
+                elem.setAttribute("class", "body-diagram");
+                diagram_cont.appendChild(elem);
+                
+                /* Add hotspots */
+                
+                elem = document.createElement("map");
+                elem.setAttribute("name", "hotspots-" + i);
+
+                var spots = diagram["Schematic"]["HotSpots"]
+                
+                for (let j = 0; j < spots.length; j++) {
+                    var spot = spots[j];
+                    var spot_elem = document.createElement("area");
+                    spot_elem.setAttribute("shape", "rect");
+                    spot_elem.setAttribute("coords", spot["Rectangle"])
+                    var part_filter = spot["Part"] == "" ? spot["Description"] : spot["Part"]
+                    spot_elem.setAttribute("filter", part_filter)
+                    spot_elem.setAttribute("onclick", "filter_diagram(this)")
+                    elem.appendChild(spot_elem);
+                }
+                
+                diagram_cont.appendChild(elem);
+                
+                
+            }
+            
+            if (count != 0) {
+                document.getElementById("show-diags").style.display = "block";
+                return;
+            }
+            
+        }
+        
+        function filter_diagram(part) {
+            document.getElementById("sr-cls").value = part.getAttribute("filter");
+            perform_multisearch();
+            diagram_fold();
         }
         
         function perform_multisearch() {
@@ -360,6 +434,21 @@
             
             var str = JSON.stringify(param);
             window.open(document.location.origin + "/fru/pictures/?d=" + str);
+        }
+        
+        function diagram_fold(link) {
+            let elem = document.getElementById("diagram-fold");
+            let style = elem.getAttribute("style");
+            var link = document.getElementById("show-diags");
+            
+            if (style == "display: none") {
+                link.innerHTML = "- Body diagrams";
+                elem.setAttribute("style", "display: block");
+            } else {
+                link.innerHTML = "+ Body diagrams";
+                elem.setAttribute("style", "display: none");
+            }
+                    
         }
         
         main();
