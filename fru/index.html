@@ -84,22 +84,22 @@
         <div style="display: none">
             
             <div class="ass-div" id="lcd-template">
-            <a onclick="open_lcd_ass(this)" href="#">LCD Assembly</a>
+            <a onclick="open_lcd_ass(event)" href="#">LCD Assembly</a>
             <img src="/res/new-window.png">
             </div>
             
              <div class="ass-div" id="main-template">
-            <a href="#" onclick="open_main_ass(this)">Main Assembly</a>
+            <a href="#" onclick="open_main_ass(event)">Main Assembly</a>
             <img src="/res/new-window.png">
             </div>
             
             <div class="ass-div" id="pic-template">
-            <a href="#" onclick="open_pics(this)">Pictures</a>
+            <a href="#" onclick="open_pics(event)">Pictures</a>
             <img src="/res/new-window.png">
             </div>
             
             <div class="ass-div" id="fru-template">
-            <a onclick="fru_idx_open(this)" href="#">FRU Index</a> 
+            <a onclick="fru_idx_open(event)" href="#">FRU Index</a> 
             <img src="/res/new-window.png">
             </div>
         
@@ -196,12 +196,14 @@
         }
         
         function open_lcd_ass(element) {
-            url = element.parentNode.parentNode.data.lcd_ass;
+            element.preventDefault();
+            url = element.currentTarget.parentNode.parentNode.data.lcd_ass;
             window.open(url);
         }
         
         function open_main_ass(element) {
-            url = element.parentNode.parentNode.data.main_ass;
+            element.preventDefault();
+            url = element.currentTarget.parentNode.parentNode.data.main_ass;
             window.open(url);
         }
         
@@ -417,22 +419,26 @@
         }
         
         function fru_idx_open(element) {
-            url = element.parentNode.parentNode.data.res_file;
+            element.preventDefault();
+            url = element.currentTarget.parentNode.parentNode.data.res_file;
             window.open(document.location.href.replace("#", "") + "?t=" + url);
         }
         
         function open_google(part) {
-            var id = part.parentNode.parentNode.data["ID"];
+            part.preventDefault();
+            var id = part.currentTarget.parentNode.parentNode.data["ID"];
             window.open("https://www.google.com/search?q=" + id);
         }
         
         function open_ebay(part) {
-            var id = part.parentNode.parentNode.data["ID"];
+            part.preventDefault();
+            var id = part.currentTarget.parentNode.parentNode.data["ID"];
             window.open("https://www.ebay.com/sch/i.html?_nkw=" + id);
         }
         
         function open_pics(part) {
-            var data = part.parentNode.parentNode.data;
+            part.preventDefault();
+            var data = part.currentTarget.parentNode.parentNode.data;
             
             var param = {
                 "part": data["ID"],
@@ -441,6 +447,7 @@
             
             var str = JSON.stringify(param);
             window.open(document.location.origin + "/fru/pictures/?d=" + str);
+            return false;
         }
         
         function diagram_fold(link) {
