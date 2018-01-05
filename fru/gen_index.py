@@ -18,6 +18,7 @@ def main():
 
     i = 0
     dirs = os.listdir("raw")
+    dirs.sort()
 
     for file in dirs:
         i += 1
