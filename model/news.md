@@ -1,14 +1,16 @@
-## libthinkpad updated to 2.6
+## More models now supported in libthinkpad version 2.6
 
-A new version of libthinkpad has been released that fixes dock detection
-on a lot of newer ThinkPad models, including the P5X, and P7X series of laptops, 
-as well as the majority of the XX50, XX60 and XX70 fleet.
+A new version of libthinkpad has been released that fixes dock detection    
+on a lot of newer ThinkPad models, including the P5X, and P7X series of laptops,       
+as well as the majority of the XX50, XX60 and XX70 fleet.     
+      
+Related patch: [https://patchwork.kernel.org/patch/9416841/](https://patchwork.kernel.org/patch/9416841/)
 
-Related commit: https://patchwork.kernel.org/patch/9416841/
-
-Author: Ognjen Galić <smclt30p@gmail.com>
+Special thanks to Raphaël Doursenaud for reporting the issue!     
+       
+Author: Ognjen Galić <smclt30p@gmail.com>     
 Date: 17th January 2018
-
+      
 ## Added support for the Mini Dock Series 3 in dockd!
 
 A new version of libthinkpad has been released that fixes dock detection    
