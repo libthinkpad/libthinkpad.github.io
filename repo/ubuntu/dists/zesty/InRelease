@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: ThinkPad Userspace Tools
 Label: Thinkpad Userspace Tools
 Codename: zesty
-Date: Thu, 23 Nov 2017 20:56:35 UTC
+Date: Wed, 17 Jan 2018 18:19:33 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
@@ -12,39 +12,39 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
- 04166452a567d0996bbc983b29bf92bf 2154 main/binary-amd64/Packages
- 6e1d86a62edd87e3840e8094114922b7 902 main/binary-amd64/Packages.gz
+ a6943da4bde5f49eb035eb460d29be5d 2147 main/binary-amd64/Packages
+ 15136e172ea8695c6d01d2adc93f8052 902 main/binary-amd64/Packages.gz
  7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
- 2d10182c37a6cc48af1d6b5ddd8c5e93 2580 main/source/Sources
- 498ba254b695a284003dcb35d6085b7d 1062 main/source/Sources.gz
+ e1b8720fa5640f568b3869fc4149deec 2580 main/source/Sources
+ acaa139dffc1f7cd544e120bc933e82c 1068 main/source/Sources.gz
  f96f6326bb6337ada111c98fbf25bf8d 163 main/source/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
- 074829821a8bcd0279cc38ec5d8a12f967a05ceb 2154 main/binary-amd64/Packages
- 2f296ccfdb00d422779f080a2fbb0b02af70dbea 902 main/binary-amd64/Packages.gz
+ 86da19a3d405f6c059acd157c724198e40f3084c 2147 main/binary-amd64/Packages
+ 73a098ad5486ca356f9b84da78f8a33a1a107005 902 main/binary-amd64/Packages.gz
  6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
- a1ea312013d3304eed88541d458fa0c8d187b0b6 2580 main/source/Sources
- 3fda7adba10f3505ec765b256543bbf4e712b654 1062 main/source/Sources.gz
+ c50f9a73a08019270894cba748e663ee3c155ff7 2580 main/source/Sources
+ 456f57922d55358b1fea4022a713b233173dd926 1068 main/source/Sources.gz
  d56c1bb50bb70a6ba7699841f2082c4518d9a0d8 163 main/source/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
- 9b16618c72495063ce61f90099d5b72f2e8548f75494ddc66527839bb98ab61f 2154 main/binary-amd64/Packages
- 7da3704da7c0c88fafed47c31e52c9636a0255569f26b35a6a96081e71ab7976 902 main/binary-amd64/Packages.gz
+ f40329ae0786eb99b1f436ad6217062b76ef046debd3270425498449b8ddf967 2147 main/binary-amd64/Packages
+ 7480a3ff3d2deeb12a0c14d4a67fc88d188a6f4dbd06ab0542cd95c3b0f70e88 902 main/binary-amd64/Packages.gz
  9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
- 11bb1fafedffe7d58c9dd3f441589790dbecde05b36411bc8b6691b66fe6e6d6 2580 main/source/Sources
- b90fc438c0338799493e245c90726b0cc8bc18c53cc068bf19d9ce13bcf00c32 1062 main/source/Sources.gz
+ e62426ca8f72231d885f352a710396e6fde56262572a450a3cf0a917bc53b5db 2580 main/source/Sources
+ 7e1a848647296a6593519ed17f692f986254646728f8c757fe0f00ecdda53a3a 1068 main/source/Sources.gz
  56a46985ce4ec8b7893ec8cadf83e07e5d7bef01af417f40883827bbe4b1b7dc 163 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEcBAEBCAAGBQJaFzceAAoJEIbD3DGr0aAmmaYH/AtpUFvxArJw/8AShBu2ncy2
-vsrF0t2YHNqdiia+QPvqHJ/9JASHUtJmBeso4IGdMwLobCdEuDa6LJxF3ZXAIdt/
-SUDJvGMGi4ylTDH2fUUtaxvarXuiyBfIiKrL0bUEuTw1Hip3aVP6TGW1a1P4444D
-C0T82Or7RLqLgKMPr83wLKHpeiEgZ/QZxaATN31IzGh16RQtf0KQ/uYwapvF7wiD
-/+w7ZyyDulJxnSfzqwHvsQGV03UeSzqj8aU7dElhdJNlM75/rBXlQE7cZHBGD0AO
-sSXO3yu2oiEtGP4BDjJIqLvTOvqM+28PYQOf0MN6ZffGkvOWIk/jENWuZJQOzUI=
-=kL4k
+iQEcBAEBCAAGBQJaX5VJAAoJEIbD3DGr0aAmbz4H+wTvFLUOIs+7EJRMkS8eFFlV
+RCMEnR2CNOhqUsynzTRoq/ob/Y3YEHNZhr8REE5vmgcR+w9B7dZCvpS8Fq8fvqqe
+Fo5l+S/0GTTNnuKh88FJywHZ1S9sr1oKLBAVf2z2g1vlARb8sSrYF/KJP0csMpuH
+wVaurWSgQ40gBxi/uPGaiLbMS+YpMSoHiIPfkFDB51Ttu9gtcpzgpkzmoKAt3kxx
+kPb470xEYLn+q3vH1kseRoLJ+cdq1X36iYWxdGZhAFpwIA81OLoOcnNv1oOhZavg
+WJMWwjVJra+jzeT/MDClDgdSYASRnrGRtaLYWEKcoimH40ErJhoscIMn9Z29FPA=
+=gNHE
 -----END PGP SIGNATURE-----
