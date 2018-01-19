@@ -9,7 +9,7 @@ VERSION=$2
 for distro in xenial yakkety zesty artful; do
 	reprepro include $distro ~/$distro/$PACKAGE\_$VERSION-*.changes;
 	cd dists/$distro;
-	gpg --clearsign -o InRelease Release;
-	gpg -abs -o Release.gpg Release;
+	gpg --batch --yes --clearsign -o InRelease Release;
+	gpg --batch --yes -abs -o Release.gpg Release;
 	cd ../../;
 done
