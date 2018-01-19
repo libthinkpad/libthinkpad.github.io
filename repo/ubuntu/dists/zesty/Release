@@ -1,7 +1,7 @@
 Origin: ThinkPad Userspace Tools
 Label: Thinkpad Userspace Tools
 Codename: zesty
-Date: Wed, 17 Jan 2018 18:19:33 UTC
+Date: Fri, 19 Jan 2018 12:47:18 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
@@ -9,29 +9,29 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
- a6943da4bde5f49eb035eb460d29be5d 2147 main/binary-amd64/Packages
- 15136e172ea8695c6d01d2adc93f8052 902 main/binary-amd64/Packages.gz
+ a63f0b6fad862bae4f1af211be127acc 2147 main/binary-amd64/Packages
+ e33f96df304a9d9b345c9c79c5b4ea96 902 main/binary-amd64/Packages.gz
  7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
- e1b8720fa5640f568b3869fc4149deec 2580 main/source/Sources
- acaa139dffc1f7cd544e120bc933e82c 1068 main/source/Sources.gz
+ 3a1210e8268a7ab5da582445da1cf663 2583 main/source/Sources
+ 13af7b19dba874b4216e7bc07f2c08f5 1066 main/source/Sources.gz
  f96f6326bb6337ada111c98fbf25bf8d 163 main/source/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
- 86da19a3d405f6c059acd157c724198e40f3084c 2147 main/binary-amd64/Packages
- 73a098ad5486ca356f9b84da78f8a33a1a107005 902 main/binary-amd64/Packages.gz
+ a921640b44da036f526f73413f8663106cd7dcde 2147 main/binary-amd64/Packages
+ 8f56042d19d4e7c8189378bcaf10474890a335e3 902 main/binary-amd64/Packages.gz
  6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
- c50f9a73a08019270894cba748e663ee3c155ff7 2580 main/source/Sources
- 456f57922d55358b1fea4022a713b233173dd926 1068 main/source/Sources.gz
+ 77cffaef57b8f567b9747695e78f50c058e96643 2583 main/source/Sources
+ bd9e9d79e068368d36c8bf9d459b24307097fa46 1066 main/source/Sources.gz
  d56c1bb50bb70a6ba7699841f2082c4518d9a0d8 163 main/source/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
- f40329ae0786eb99b1f436ad6217062b76ef046debd3270425498449b8ddf967 2147 main/binary-amd64/Packages
- 7480a3ff3d2deeb12a0c14d4a67fc88d188a6f4dbd06ab0542cd95c3b0f70e88 902 main/binary-amd64/Packages.gz
+ 084f3247f926e2df22ee339cb8554c45919f14eaf7133fe30be596da54a36156 2147 main/binary-amd64/Packages
+ 9abf9b7b0a9ded19e9703ebf129ceab589fc135a4fb154b92d2b80182c3c03ac 902 main/binary-amd64/Packages.gz
  9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
- e62426ca8f72231d885f352a710396e6fde56262572a450a3cf0a917bc53b5db 2580 main/source/Sources
- 7e1a848647296a6593519ed17f692f986254646728f8c757fe0f00ecdda53a3a 1068 main/source/Sources.gz
+ f514be6067b48a729b5b2efc8711f68c1470f963cbae496f06c54ae08e1d1379 2583 main/source/Sources
+ 36e0ffe3d98c946806106afa25c34d3ca01884f74904f647c1364f489d324b28 1066 main/source/Sources.gz
  56a46985ce4ec8b7893ec8cadf83e07e5d7bef01af417f40883827bbe4b1b7dc 163 main/source/Release

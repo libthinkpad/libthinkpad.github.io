@@ -1,17 +1,17 @@
 Package: dockd
-Version: 1.20-1ubuntu1~yakkety
+Version: 1.21-1ubuntu1~yakkety
 Architecture: amd64
 Maintainer: Ognjen Galic <smclt30p@gmail.com>
-Installed-Size: 43
+Installed-Size: 45
 Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libthinkpad1, libx11-6, libxrandr2 (>= 2:1.5)
 Homepage: http://www.thinkpads.org/
 Priority: optional
 Section: utils
-Filename: pool/main/d/dockd/dockd_1.20-1ubuntu1~yakkety_amd64.deb
-Size: 11444
-SHA256: a62bb620adce90ab65d2cf8b8fc237087cc104ddb03af7c32e80344902e15f73
-SHA1: 012eb45676af11c43ec9092b6c23d8b8ba80928f
-MD5sum: 09d0d8a9286231e724be00b9d7572861
+Filename: pool/main/d/dockd/dockd_1.21-1ubuntu1~yakkety_amd64.deb
+Size: 11970
+SHA256: dfeec791a2106eefe6551bf9ad3ea0c02176b71f9fe3addc9f40a4db42ac9371
+SHA1: a1014c9ca0427fc8cc71cdbe6d419f593bc5bc70
+MD5sum: c435c3ce64b98e15fa55b0706096cb91
 Description: Lenovo ThinkPad Dock Daemon
  This tools allows you to switch X modes
  automatically when you undock your ThinkPad.

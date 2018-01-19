@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: ThinkPad Userspace Tools
 Label: Thinkpad Userspace Tools
 Codename: artful
-Date: Wed, 17 Jan 2018 18:19:33 UTC
+Date: Fri, 19 Jan 2018 12:47:19 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for the ThinkPad Userspace Tools
@@ -12,39 +12,39 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  56de70a5e8594912efda07305c48670b 161 main/binary-i386/Release
- 5e7f740d7a7784e998f8b85cad5835ba 2154 main/binary-amd64/Packages
- 137e6317a51dcd6724176f991fa290c3 902 main/binary-amd64/Packages.gz
+ 52d2d2df314199bdd7e0bece10e5bca2 2154 main/binary-amd64/Packages
+ 87fece8e662d7c18e6b23a4c52baef85 903 main/binary-amd64/Packages.gz
  7d6a5c0755c195d03d5ce2d96010d694 162 main/binary-amd64/Release
- 956e50b64bbaf51dcb98746ea141654a 2594 main/source/Sources
- 3428d4937ab42c20e4b6c0a6d8b37d1d 1071 main/source/Sources.gz
+ 9efbc7ce8a3ffec571e6445e6e4dbece 2597 main/source/Sources
+ c687434d62d3d9b21579746e73dfde83 1070 main/source/Sources.gz
  f96f6326bb6337ada111c98fbf25bf8d 163 main/source/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  5332c5acaee2c244df54f87c09c91af227538dc4 161 main/binary-i386/Release
- 9a88e3af484231de9be083052cf1a73cc8a3be3c 2154 main/binary-amd64/Packages
- bc5e945b49da3526b661458676340b3edeeb9cd7 902 main/binary-amd64/Packages.gz
+ 9de6d24a7aa74f4ceb79664ae1b8ae6c9ad9db16 2154 main/binary-amd64/Packages
+ 10c66a97d56d23376688e248a5c96837fba53d45 903 main/binary-amd64/Packages.gz
  6dbbc8440377268ea194fba5c711fe323e92cdfa 162 main/binary-amd64/Release
- f0657048cceee20d111816e80f06db0fd3a15b06 2594 main/source/Sources
- ba65836e92396dd7f899e800297f0f3351eb4946 1071 main/source/Sources.gz
+ 5ad341d711c3873739b76607f0d029160ef76a09 2597 main/source/Sources
+ 0ba35cc8cb55371903ae68c10a640d6b26c29107 1070 main/source/Sources.gz
  d56c1bb50bb70a6ba7699841f2082c4518d9a0d8 163 main/source/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  9e4c3dc14609ae8db24d4239335142909379ca8fc9a3b198ed688f0bb7cdfcd7 161 main/binary-i386/Release
- 5125327bdf026d6711c3b09e2f7d5238466e85b14bb8dd63624bc2a78200cbdf 2154 main/binary-amd64/Packages
- 937effbe76a1c50baf022ed6729932973f566de0830a9e5d08d2e1c02175fc1e 902 main/binary-amd64/Packages.gz
+ d578f8d7fc88976e219e5f11f55ab894e37b3f673d8021dbd86ce56a1e772b5d 2154 main/binary-amd64/Packages
+ 53fb6997eee9a9996c06e3d1124d933964dada44c15293ad9e163097633d89b2 903 main/binary-amd64/Packages.gz
  9cd60d729267f6e75951a4a89f73ea8a672ebf3f04d15546a52d94a9044e07bd 162 main/binary-amd64/Release
- 366df25753c76512bda4518f870fc4bfa6f18d014e5b65c8012fc674a007953c 2594 main/source/Sources
- 27421e0b1b4845eddd32817ea0928d845cbb63a3d360aec05a67315812b74e5f 1071 main/source/Sources.gz
+ 7c70ddcae4089f47c652985deee78f0cbf17ceddb396ad47d7e8cca62071b3cb 2597 main/source/Sources
+ aed6f6ff1efbf35f79b6fdbba93417107b3a5cc39cd5b85a025f26c6ff5d26d6 1070 main/source/Sources.gz
  56a46985ce4ec8b7893ec8cadf83e07e5d7bef01af417f40883827bbe4b1b7dc 163 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEcBAEBCAAGBQJaX5VKAAoJEIbD3DGr0aAmKbMIAJu2/1l8/gXePAhezcRgKU6N
-+83J088skc5+8sDc8fWnsuPb/tcWZKVqH79OeeWDoOKPLMZliFwt+VPxesnuofrD
-VI7tWevrBbQsxh0aGy+MShRmtpw85QCBdnofWwldIi0SnyOp6JCGcZCz8ruAiX62
-NB5onsTKTD06PcMbhiysqxweCCG5KqgN4WkKdhvFQS7ceJqzs2gNU7Ht+Hh6UcvU
-YNh7paCgFJlkDXr3qJ4JD4kPl/M+Wnf539rXoJQsxV6TvkpWSRffyFRX4PMvGOGt
-ezXhTAQm3ZiIVbZFLoLWXgYlngwXofBvbQ2OYWbcgpz8DP4uWRzbogqMfv0+A5g=
-=sL4Z
+iQEcBAEBCAAGBQJaYejXAAoJEIbD3DGr0aAm9/EH/itFdoNM2pX0UNeaUdEPqYW/
+3XabcMtyjAo/G1Aw7cmNDFC64dIq1uO62fLW0aHHVtqYHmk7TOIa7edfXW1Gy9DR
+KMBIqCSjhx8yLEs2EIlYwWuYpQ0SYSbNHYpn4HITBEzNOFgQGGfAA6em95y1l3+1
+RrhDynfX1TSeAv7lW+aI9TUVbXMBaSU6Wmib5nbr5prXJ9Rgrs9TPFkmp8pZ5aak
+2K+ZTDWA31R4hN6gGcPfBrAeKlyLPziHVZeqMnXxYDmCkJ4XcdNyzdPySHy61HqP
+cRlg8bH23JEtHJYZChM4z9FGw0q875w+x2Zy9KKxKGyAJz5sseIbYvdofjqIIbg=
+=8VpR
 -----END PGP SIGNATURE-----
