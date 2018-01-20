@@ -163,3 +163,9 @@ th input {
 .parts-table {
     float: left;
 }
+
+.subtitle {
+    color: #6d6d6d;
+    line-height: 10px;
+    font-size: 0.7em;
+}

@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="shortcut icon" href="/res/dot.png">
+        <link rel="stylesheet" href="/res/main.css"/>
+        <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.2/dist/showdown.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+    
+        <div id="header-cont"></div>
+        
+        <div id="body-wrap">
+		<h3>Blog posts on ThinkPads.org</h3>
+		<div id="post-content"></div>
+	</div>
+        
+        <div id="footer-cont"></div>
+        
+    </body>
+    
+    <script src="/res/header.js" type="text/javascript"></script>
+    <script src="/res/footer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        String.prototype.contains = function(str) 
+	{
+            if (this.toLowerCase().indexOf(str.toLowerCase()) == -1) {
+                return false;
+            }
+            return true;
+        }
+
+ 	function get_post_name()
+	{
+		let raw = document.location.search;
+		let split = raw.split("=");
+		if (split.length != 2)
+			return null
+		return split[1];
+	}
+
+	function get_post_title(text)
+	{
+		var lines = text.split("\n");
+		if (lines.length < 1)
+			return "Post - ThinkPads.org"
+		return lines[0].replace("##", "") + " - ThinkPads.org"
+	}
+
+	function get_post_metadata(text)
+	{
+		var split = text.split("\n");
+		var payload = {
+			"author": null,
+			"date": null,
+			"image": null,
+		};
+
+		for (var i = 0; i < split.length; i++) {
+			var test = split[i];
+			if (test.contains("Written-by:"))
+				payload.author = test.replace("Written-by:", "");
+			if (test.contains("Posted-on:"))
+				payload.date = test.replace("Posted-on:", "");
+			if (test.contains("Image:"))
+				payload.image = test.replace("Image:", "");
+		}
+
+		if (payload.author != null && payload.date != null)
+			return payload;
+		return null;
+	}
+
+	async function display_posts()
+	{
+		let post = get_post_name();
+
+		if (post == null) {
+			document.write("Error fetching post!");
+			return;
+		}
+
+		let raw = await fetch("/model/posts/" + post + ".md");
+	        var converter = new showdown.Converter();
+		converter.setOption("simpleLineBreaks", true);
+		var text = await raw.text();
+		
+		var split = text.split("---");
+
+		if (split.length != 2) {
+			document.write("Post is misformatted!");	
+			return;
+		}
+
+		let metadata = get_post_metadata(split[1]);
+
+		if (metadata == null) {
+			console.log("Invalid post metadata!");
+			return;
+		}
+
+		if (metadata.image != null) {
+			var image = document.createElement("img");
+			image.setAttribute("src", metadata.image);
+			image.setAttribute("style", "width: 460px");
+			document.getElementById("post-content").appendChild(image);
+		}
+
+		split[0] += ("Posted on " + metadata.date + "    \n");
+		split[0] += ("Posted by " + metadata.author + "    \n");
+
+		var cont = document.createElement("div");
+		cont.innerHTML = converter.makeHtml(split[0]);
+
+		document.title = get_post_title(text);
+		document.getElementById("post-content").appendChild(cont);
+	}
+
+	async function display_index()
+	{
+		var resp = await fetch("/model/posts/index.json")
+		var text = await resp.text()
+		var json = JSON.parse(text);
+		var cont = document.getElementById("post-content");
+		
+		for (var i = 0; i < json.length; i++) {
+			var container = document.createElement("div");
+
+			var link = document.createElement("a");
+			link.setAttribute("href", document.location.href + "?p=" + json[i].file);
+
+			var title = document.createElement("h2");
+			title.innerHTML = json[i].title;
+			title.setAttribute("style", "line-height: 10px");
+			link.appendChild(title);
+			container.appendChild(link);
+
+			var date = document.createElement("p");
+			date.innerHTML = json[i].date;
+			date.setAttribute("class", "subtitle");
+			container.appendChild(date);
+
+			var desc = document.createElement("p");
+			desc.innerHTML = json[i].desc;
+			desc.setAttribute("style", "line-height: 10px");
+			container.appendChild(desc);
+
+			if (json[i].image != "null") {
+				var image = document.createElement("img");
+				image.setAttribute("src", json[i].image);
+				image.setAttribute("width", "460px");
+				container.appendChild(image);
+			}
+			
+			var sep = document.createElement("br");
+			cont.appendChild(container);
+			cont.appendChild(sep);
+		}
+	}
+    
+	(async function run() 
+	{
+		if (get_post_name() == null) {
+			display_index();
+			return;
+		}
+		display_posts();
+	})()
+        
+    </script>
+</html>
