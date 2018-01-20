@@ -172,6 +172,6 @@ or receive bad calls afterwards. *__Take your time.__*
 
 ---       
 Written-by: Ognjen Galić <smclt30p@gmail.com>     
-Posted-on: 21st June January 2017
+Posted-on: 21st June 2017
 Short-description: A long and comprehensive guide on how to buy a used X220
 Image: /res/x220.jpg
