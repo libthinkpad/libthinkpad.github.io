@@ -28,7 +28,7 @@ import shutil
 
 from typing import List
 from jinja2 import Environment, FileSystemLoader
-from markdown import markdown
+from markdown2 import markdown as markdown
 
 
 class BlogPostParser:
@@ -121,7 +121,7 @@ class BlogPostParser:
         return self.file.replace(".md", "")
 
     def get_content_html(self):
-        return markdown(self.get_content(), extensions=["markdown.extensions.nl2br"])
+        return markdown(self.get_content(),extras=["break-on-newline", "header-ids"])
 
 class BlogPostFetcher:
     """
@@ -251,7 +251,7 @@ class MarkdownRenderer(Renderer):
     def render(self):
         with codecs.open("model/{}".format(self.file), mode="r", encoding="utf-8") as file:
             data = file.read()
-            text =  markdown(data, extensions=["markdown.extensions.nl2br"])
+            text =  markdown(data, extras=["break-on-newline", "header-ids"])
             return self.template.render(text=text, title=self.title,
                                     recent=RecentObjectFetcher.get_recent_data())
 

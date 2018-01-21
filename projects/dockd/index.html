@@ -47,7 +47,7 @@
                     <li><a href="/repositories">Repositories</a>
                         <ul>
                             <a href="/repositories/#ubuntu"><li>Ubuntu</li></a>
-                            <a href="/repositories/#ubuntu"><li>Arch Linux</li></a>
+                            <a href="/repositories/#arch-linux"><li>Arch Linux</li></a>
                         </ul>
                     </li>
                     <li><a href="/ftp">FTP Index</a></li>
@@ -62,100 +62,146 @@
     <h1>dockd Documentation - ThinkPads.org</h1>
     <div class="post-wrap">
     <p>When moving from Windows to Linux on a lightweight desktop environment like Xfce or LXDE, using the dock is really hard.<br />
-Usually nothing happens when you insert the dock, and you use xrandr to configure your displays. Then, you remove the ThinkPad <br />
+Usually nothing happens when you insert the dock, and you use xrandr to configure your displays. Then, you remove the ThinkPad<br />
 from the dock and the screen stays blank.</p>
-<p>That's why we created dockd, a program that runs in the background and detects when your ThinkPad is added or removed from a dock  <br />
+
+<p>That's why we created dockd, a program that runs in the background and detects when your ThinkPad is added or removed from a dock<br />
 and it automatically switches output mode profiles that you have configured before.</p>
+
 <p>Latest version: 1.20<br />
-Developer: Ognjen Galić <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a><br />
+Developer: Ognjen Galić <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x73;m&#x63;&#108;t&#51;&#48;&#x70;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#46;c&#111;&#109;">&#x73;m&#x63;&#108;t&#51;&#48;&#x70;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#46;c&#111;&#109;</a><br />
 <a href="http://thinkpads.org/ftp/dockd/">Upstream releases</a><br />
 <a href="https://github.com/libthinkpad/dockd">git repository</a></p>
-<h2>Table of Contents</h2>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
 <ul>
-<li><a href="#doyouneeddockd">Do you need dockd?</a></li>
-<li><a href="#howdoesdockdwork">How does dockd work?</a></li>
-<li><a href="#howtoinstalldockd">How to install dockd?</a></li>
-<li><a href="#howtousedockd">How to use dockd?</a></li>
-<li><a href="#whatifichangethemonitoriusedtoconfigurethedock">What if I change the monitor I used to configure the dock?</a></li>
-<li><a href="#dockandundockhooks">Dock and undock hooks</a></li>
+<li><a href="#do-you-need-dockd">Do you need dockd?</a></li>
+<li><a href="#how-does-dockd-work">How does dockd work?</a></li>
+<li><a href="#how-to-install-dockd">How to install dockd?</a></li>
+<li><a href="#how-to-use-dockd">How to use dockd?</a></li>
+<li><a href="#what-if-i-change-the-monitor-i-used-to-configure-the-dock">What if I change the monitor I used to configure the dock?</a></li>
+<li><a href="#dock-and-undock-hooks">Dock and undock hooks</a></li>
 <li><a href="#changelog">Changelog</a></li>
 </ul>
+
 <hr />
-<h2>Do you need dockd?</h2>
-<p>A few people have reported bugs with dockd whilst using their custom solution for dock switching. If your ThinkPad switches output  <br />
-modes automatically (KDE does this) you <strong>do not</strong> need dockd. If you use some desktop that does not support output mode switching  <br />
-(like Xfce or LXDE) or you use some lightweight window manager with barely any features (like i3 or awesome), but you have some   <br />
+
+<h2 id="do-you-need-dockd">Do you need dockd?</h2>
+
+<p>A few people have reported bugs with dockd whilst using their custom solution for dock switching. If your ThinkPad switches output<br />
+modes automatically (KDE does this) you <strong>do not</strong> need dockd. If you use some desktop that does not support output mode switching<br />
+(like Xfce or LXDE) or you use some lightweight window manager with barely any features (like i3 or awesome), but you have some<br />
 script that you made that handles dock switching using udev and xrandr you <strong>do not</strong> need dockd.</p>
-<p>If you wish to switch to dockd or test dockd, please disable those scripts <em>before</em> running dockd, because dockd and those scripts  <br />
+
+<p>If you wish to switch to dockd or test dockd, please disable those scripts <em>before</em> running dockd, because dockd and those scripts<br />
 are known to conflict each other.      </p>
+
 <p>However, if you dock your ThinkPad into the dock and nothing happens, you <strong>do</strong> need dockd.    </p>
-<h2>How does dockd work?</h2>
-<p>Dockd works on the principle of output mode profiles. You define 2 profiles for monitor layouts and output modes and save them to disk. <br />
+
+<h2 id="how-does-dockd-work">How does dockd work?</h2>
+
+<p>Dockd works on the principle of output mode profiles. You define 2 profiles for monitor layouts and output modes and save them to disk.<br />
 Then, when the dockd ACPI system detects that the ThinkPad has been docked or undocked, it reads those output mode profiles from disk<br />
 and applies them.</p>
+
 <p>Here's a video how this works:</p>
-<p><a href="https://www.youtube.com/watch?v=0UlevEh82f0"><img alt="video" src="https://img.youtube.com/vi/0UlevEh82f0/0.jpg" /></a></p>
-<h2>How to install dockd?</h2>
-<p>If you run a newer version of Ubuntu than Xenial Xerus, there are Ubuntu repositories avaialble <a href="/repositories">here</a> on ThinkPads.org. <br />
+
+<p><a href="https://www.youtube.com/watch?v=0UlevEh82f0"><img src="https://img.youtube.com/vi/0UlevEh82f0/0.jpg" alt="video" /></a></p>
+
+<h2 id="how-to-install-dockd">How to install dockd?</h2>
+
+<p>If you run a newer version of Ubuntu than Xenial Xerus, there are Ubuntu repositories avaialble <a href="/repositories">here</a> on ThinkPads.org.<br />
 If you are using Arch Linux, there are packages in the <a href="https://aur.archlinux.org/packages/dockd">AUR</a>.</p>
+
 <p>If you run neither of those, you need to build libthinkpad and dockd from source.    </p>
-<p>libthinkpad needs systemd &gt;=221, so any system running systemd earlier than 221 is not supported currently. <br />
+
+<p>libthinkpad needs systemd &gt;=221, so any system running systemd earlier than 221 is not supported currently.<br />
 However, that will change in the future as the depenency on systemd is no strong.</p>
+
 <p>Here's how to build dockd from source:</p>
-<p><strong>1) <a href="#">Build libthinkpad from source and install it</a></strong>  <br />
+
+<p><strong>1) <a href="#">Build libthinkpad from source and install it</a></strong><br />
 <strong>2) Install the development dependencies</strong></p>
+
 <p>Dockd depends on <code>libXrandr</code> and <code>libthinkpad</code>.</p>
-<p>To build dockd you need the X11 RandR extension API installed and ready for development, which means that you need to install your distributions       <br />
+
+<p>To build dockd you need the X11 RandR extension API installed and ready for development, which means that you need to install your distributions<br />
 development package for it.</p>
+
 <p>Here's the package name for popular distributions:</p>
-<p>Debian: <code>libXrandr-dev</code>  <br />
-Fedora: <code>libxrandr-devel</code> <br />
-Gentoo: <code>libXrandr</code>  <br />
+
+<p>Debian: <code>libXrandr-dev</code><br />
+Fedora: <code>libxrandr-devel</code><br />
+Gentoo: <code>libXrandr</code><br />
 openSUSE: <code>libXrandr-devel</code></p>
+
 <p>If your distribution's package manager supports file search (aka. provides), search for <code>X11/extensions/Xrandr.h</code>     </p>
+
 <p><em>NOTE</em>: Watch out for that capital 'X' on some distributions.</p>
+
 <p>Install that package with your distribution's package management system.   </p>
+
 <p><strong>3) Install the build system dependencies</strong></p>
+
 <p><em>Note: If you built libthinkpad yourself you can skip this step.</em></p>
-<p>dockd uses CMake as it's build system, so we need to install that. Version &gt;=2.8 is needed, and most distributions provide versions greater  <br />
+
+<p>dockd uses CMake as it's build system, so we need to install that. Version &gt;=2.8 is needed, and most distributions provide versions greater<br />
 than that. The package is usually called <code>cmake</code>. Install it, and verify that CMake version &gt;=2.8 is operational by running <code>cmake --version</code>:</p>
+
 <p>```<br />
 thinkpad :: ~ » cmake --version<br />
 cmake version 3.7.2</p>
+
 <p>CMake suite maintained and supported by Kitware (kitware.com/cmake).<br />
 ```</p>
-<p>Next, we need a compiler suite that is C++11 compilant. dockd was developed and tested with the GNU Compiler Collection, version 5.4.0 on  <br />
+
+<p>Next, we need a compiler suite that is C++11 compilant. dockd was developed and tested with the GNU Compiler Collection, version 5.4.0 on<br />
 Ubuntu Xenial Xerus. The package has very different names for different systems, here are the most popular ones:</p>
-<p>Ubuntu: <code>build-essential</code>  <br />
-Debian: <code>build-essential</code> <br />
+
+<p>Ubuntu: <code>build-essential</code><br />
+Debian: <code>build-essential</code><br />
 Fedora: <code>gcc-c++</code><br />
 openSUSE: <code>gcc-c++</code>    </p>
+
 <p>After installing the GNU C++ Compiler, verify that it works by running <code>g++ --version</code>:    </p>
+
 <p>```<br />
 thinkpad :: ~ » g++ --version<br />
 g++ (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609<br />
 Copyright (C) 2015 Free Software Foundation, Inc.<br />
 This is free software; see the source for copying conditions.  There is NO<br />
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+
 <p>```</p>
-<p>Next, we need a Makefile-compatible runner. We will use GNU Make. The package is called <code>make</code> on almost all distributions, so install that. <br />
+
+<p>Next, we need a Makefile-compatible runner. We will use GNU Make. The package is called <code>make</code> on almost all distributions, so install that.<br />
 After installing, please verify that GNU Make is operational by running <code>make --version</code>:    </p>
-<p><code>thinkpad :: ~ » make --version
+
+<p><code>
+thinkpad :: ~ » make --version
 GNU Make 4.1
 Built for x86_64-pc-linux-gnu
 Copyright (C) 1988-2014 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.</code></p>
+There is NO WARRANTY, to the extent permitted by law.
+</code></p>
+
 <p>Your build environment is now ready.</p>
+
 <p><strong>4) Obtain the source code</strong></p>
+
 <p>Head over to our <a href="/ftp/dockd/">FTP archive</a> and download the latest <code>.tar.gz</code> file from there.</p>
+
 <ul>
 <li>Extract the tarball: <code>tar -xf dockd-x.xx.tar.gz</code>.    </li>
 <li>Change directory to the extracted files: <code>cd dockd-x.xx.tar.gz</code>    </li>
 <li>Verify you are in the source tree:      </li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » ls -la
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » ls -la
 total 52
 drwxrwxr-x 2 gala gala  4096 Nov 19 17:25 .
 drwxr-xr-x 4 gala gala 12288 Nov 19 17:25 ..
@@ -163,11 +209,15 @@ drwxr-xr-x 4 gala gala 12288 Nov 19 17:25 ..
 -rw-rw-r-- 1 gala gala 14110 Nov 15 22:40 crtc.cpp
 -rw-rw-r-- 1 gala gala  1433 Nov 15 21:43 crtc.h
 -rw-r--r-- 1 gala gala   204 Nov 17 17:15 dockd.desktop
--rw-rw-r-- 1 gala gala  5130 Nov 16 15:27 main.cpp</code></p>
+-rw-rw-r-- 1 gala gala  5130 Nov 16 15:27 main.cpp
+</code></p>
+
 <ul>
 <li>Run <code>cmake . -DCMAKE_INSTALL_PREFIX=/usr</code></li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » cmake . -DCMAKE_INSTALL_PREFIX=/usr
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » cmake . -DCMAKE_INSTALL_PREFIX=/usr
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -184,27 +234,38 @@ drwxr-xr-x 4 gala gala 12288 Nov 19 17:25 ..
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gala/Downloads/dockd-1.20</code></p>
+-- Build files have been written to: /home/gala/Downloads/dockd-1.20
+</code></p>
+
 <ul>
 <li>Run <code>make</code></li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » make                            
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » make                            
 [ 33%] Building CXX object CMakeFiles/dockd.dir/main.cpp.o
 [ 66%] Building CXX object CMakeFiles/dockd.dir/crtc.cpp.o
 [100%] Linking CXX executable dockd
-[100%] Built target dockd</code></p>
+[100%] Built target dockd
+</code></p>
+
 <ul>
 <li>Run <code>sudo make install</code></li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » sudo make install
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » sudo make install
 [100%] Built target dockd
 Install the project...
 -- Install configuration: ""
 -- Installing: /usr/bin/dockd
--- Installing: /etc/xdg/autostart/dockd.desktop</code></p>
+-- Installing: /etc/xdg/autostart/dockd.desktop
+</code></p>
+
 <ul>
 <li>Verify that dockd is operational by running <code>dockd</code></li>
 </ul>
+
 <p>```<br />
 thinkpad :: ~/Downloads/dockd-1.20 » dockd<br />
 dockd 1.20 (libthinkpad 2.3)<br />
@@ -212,50 +273,82 @@ Copyright (C) 2017 The Thinkpads.org Team<br />
 License: FreeBSD License (BSD 2-Clause) <a href="https://www.freebsd.org/copyright/freebsd-license.html">https://www.freebsd.org/copyright/freebsd-license.html</a>.<br />
 This is free software: you are free to change and redistribute it.<br />
 There is NO WARRANTY, to the extent permitted by law.</p>
+
 <p>Written by Ognjen Galic<br />
 See --help for more information<br />
 ```</p>
+
 <p><strong>5) Install <code>acpid</code></strong></p>
+
 <p>In order for dockd to support docks such as the MiniDock Series 3, you need<br />
 <code>acpid</code> to support it.</p>
+
 <p><strong>6) Create the needed directories</strong></p>
+
 <ul>
 <li><code>sudo mkdir /etc/dockd</code></li>
 </ul>
+
 <p><strong>7) Dockd is now installed</strong></p>
-<h2>How to use dockd?</h2>
+
+<h2 id="how-to-use-dockd">How to use dockd?</h2>
+
 <p>Please, before going further verify that nothing interacts with the dock from your desktop and read <a href="#doyouneeddockd">Do you need dockd?</a>.    </p>
+
 <p>Dockd has two configuration files in <code>/etc/dockd/</code> that need to be written. First, we write the configuration when the ThinkPad is docked.    </p>
+
 <ul>
 <li>Insert your ThinkPad into the dock</li>
 <li>Configure the display layouts and resolutions using your desktop environments interface (or <code>xrandr</code> if you use something like i3)</li>
 </ul>
+
 <p>Here is an example of one external monitor on a ThinkPad X220 and a Ultrabase Series 3.</p>
-<p><img alt="img" src="/res/xfceext.png" /></p>
+
+<p><img src="/res/xfceext.png" alt="img" /></p>
+
 <ul>
 <li>Run <code>sudo dockd --config docked</code></li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » sudo dockd --config docked
-config file written to /etc/dockd/docked.conf</code><br />
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » sudo dockd --config docked
+config file written to /etc/dockd/docked.conf
+</code><br />
 The configuration when docked is now written.</p>
+
 <ul>
 <li>Remove the ThinkPad from the dockd</li>
 <li>Configure the internal panel resolution and refresh rate</li>
 </ul>
+
 <p>Here is an example of a Lenovo X220 internal panel running at it's native resolution of 1366x768:</p>
-<p><img alt="img" src="/res/xfceint.png" /></p>
+
+<p><img src="/res/xfceint.png" alt="img" /></p>
+
 <ul>
 <li>Run <code>sudo dockd --config undocked</code></li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » sudo dockd --config undocked
-config file written to /etc/dockd/undocked.conf</code></p>
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » sudo dockd --config undocked
+config file written to /etc/dockd/undocked.conf
+</code></p>
+
 <p>All config files are now written and dockd is ready for usage.   </p>
+
 <p>Now, just log out and log back in, and verify that dockd is running in the background by running <code>ps -ux | grep dockd</code></p>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » ps -ux | grep dockd                                                                                          1 ↵
-gala      5831  0.0  0.0 287768  5184 ?        Sl   08:58   0:00 dockd --daemon</code></p>
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » ps -ux | grep dockd                                                                                          1 ↵
+gala      5831  0.0  0.0 287768  5184 ?        Sl   08:58   0:00 dockd --daemon
+</code></p>
+
 <p>If you see <code>dockd --daemon</code> congradulations! Dockd is now ready! Try inserting your laptop into the dock and observe if the video modes change.</p>
-<h2>What if I change the monitor I used to configure the dock?</h2>
+
+<h2 id="what-if-i-change-the-monitor-i-used-to-configure-the-dock">What if I change the monitor I used to configure the dock?</h2>
+
 <p>Each time you change the external monitor configuration that you use with your dock, you need to re-run the docked configuration.</p>
+
 <ul>
 <li>Remove your ThinkPad from the dock</li>
 <li>Kill the background dockd proces: <code>killall dockd</code></li>
@@ -263,25 +356,40 @@ gala      5831  0.0  0.0 287768  5184 ?        Sl   08:58   0:00 dockd --daemon<
 <li>Connect the new displays to the dock</li>
 <li>Configure the display layouts and resolutions using your desktop environments interface (or <code>xrandr</code> if you use something like i3)</li>
 </ul>
+
 <p>Here is an example of one external monitor on a ThinkPad X220 and a Ultrabase Series 3.</p>
-<p><img alt="img" src="/res/xfceext.png" /></p>
+
+<p><img src="/res/xfceext.png" alt="img" /></p>
+
 <ul>
 <li>Run <code>sudo dockd --config docked</code></li>
 </ul>
-<p><code>thinkpad :: ~/Downloads/dockd-1.20 » sudo dockd --config docked
-config file written to /etc/dockd/docked.conf</code></p>
+
+<p><code>
+thinkpad :: ~/Downloads/dockd-1.20 » sudo dockd --config docked
+config file written to /etc/dockd/docked.conf
+</code></p>
+
 <p>Now, log out and log back in and everything should work normally.</p>
-<h2>Dock and undock hooks</h2>
-<p>If you want to to additional actions after docking or undocking,  <br />
+
+<h2 id="dock-and-undock-hooks">Dock and undock hooks</h2>
+
+<p>If you want to to additional actions after docking or undocking,<br />
 you can define them in /etc/dockd/dock.hook and /etc/dockd/undock.hook.     </p>
-<p>There, you can disable WiFi when docked, change input profiles, keyboard   <br />
+
+<p>There, you can disable WiFi when docked, change input profiles, keyboard<br />
 layouts, sound outputs and so on.     </p>
-<h2>Changelog</h2>
+
+<h2 id="changelog">Changelog</h2>
+
 <p><strong><em>What's new in version 1.20</em></strong><br />
 * First public releae</p>
+
 <p><strong><em>What's new in version 1.21</em></strong><br />
 * Added support for dock and undock hooks</p>
+
 <p><a href="#">Back to top</a></p>
+
     </div>
 
             </div>

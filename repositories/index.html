@@ -47,7 +47,7 @@
                     <li><a href="/repositories">Repositories</a>
                         <ul>
                             <a href="/repositories/#ubuntu"><li>Ubuntu</li></a>
-                            <a href="/repositories/#ubuntu"><li>Arch Linux</li></a>
+                            <a href="/repositories/#arch-linux"><li>Arch Linux</li></a>
                         </ul>
                     </li>
                     <li><a href="/ftp">FTP Index</a></li>
@@ -62,52 +62,75 @@
     <h1>Software Repositories - ThinkPads.org</h1>
     <div class="post-wrap">
     <p>We provide pre-built binaries for all projects that we host. Supported distributions are:     </p>
+
 <ul>
 <li><a href="#ubuntu">Ubuntu</a></li>
 <li><a href="#archlinux">Arch Linux</a></li>
 <li><a href="#otherdistros">Other Distros</a></li>
 </ul>
-<h2>Ubuntu</h2>
-<p>The ThinkPads.org team manages a couple of official repositories for versions of Ubuntu after Xenial Xerus.   <br />
+
+<h2 id="ubuntu">Ubuntu</h2>
+
+<p>The ThinkPads.org team manages a couple of official repositories for versions of Ubuntu after Xenial Xerus.<br />
 That includes:</p>
+
 <ul>
 <li>Ubuntu 17.10 Artful Ardwark (artful)</li>
 <li>Ubuntu 17.04 Zesty Zepus (zesty)</li>
 <li>Ubuntu 16.10 Yakkety Yak (yakkety)</li>
 <li>Ubuntu 16.04 Xenial Xerus (xenial)</li>
 </ul>
+
 <p>To use them, first add the ThinkPads.org owner's GPG key:    </p>
+
 <p><code>wget -q -O - http://thinkpads.org/repo/ubuntu/thinkpads.gpg.key | sudo apt-key add -</code>   </p>
+
 <p>Next, use one of the repositories provided:</p>
+
 <ul>
 <li>Ubuntu 17.10 Artful Ardwark (artful)    </li>
 </ul>
+
 <p><code>echo "deb http://thinkpads.org/repo/ubuntu artful main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+
 <ul>
 <li>Ubuntu 17.04 Zesty Zepus (zesty)    </li>
 </ul>
+
 <p><code>echo "deb http://thinkpads.org/repo/ubuntu zesty main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+
 <ul>
 <li>Ubuntu 16.10 Yakkety Yak (yakkety)    </li>
 </ul>
+
 <p><code>echo "deb http://thinkpads.org/repo/ubuntu yakkety main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+
 <ul>
 <li>Ubuntu 16.04 Xenial Xerus (xenial)    </li>
 </ul>
+
 <p><code>echo "deb http://thinkpads.org/repo/ubuntu xenial main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
-<h2>Arch Linux</h2>
+
+<h2 id="arch-linux">Arch Linux</h2>
+
 <p>All our packages are available in the Arch User Repository (AUR).    </p>
+
 <p><a href="https://aur.archlinux.org/packages/dockd">dockd</a><br />
 <a href="https://aur.archlinux.org/packages/libthinkpad">libthinkpad</a></p>
-<h2>Other distros</h2>
-<p>We need packagers. If you are willing to package code for ThinkPads.org for other distributions, feel free to contact  <br />
-us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</p>
+
+<h2 id="other-distros">Other distros</h2>
+
+<p>We need packagers. If you are willing to package code for ThinkPads.org for other distributions, feel free to contact<br />
+us at <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#115;&#109;c&#108;&#116;3&#x30;&#112;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#115;&#109;c&#108;&#116;3&#x30;&#112;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a>.</p>
+
 <p>Currently help is wanted for:</p>
+
 <ul>
 <li>Debian    </li>
 <li>Fedora    </li>
 <li>openSUSE    </li>
 </ul>
+
     </div>
 
             </div>

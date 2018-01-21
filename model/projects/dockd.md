@@ -5,19 +5,19 @@ from the dock and the screen stays blank.
 That's why we created dockd, a program that runs in the background and detects when your ThinkPad is added or removed from a dock    
 and it automatically switches output mode profiles that you have configured before.
 
-Latest version: 1.20
+Latest version: 1.21
 Developer: Ognjen Galić <smclt30p@gmail.com>
 [Upstream releases](http://thinkpads.org/ftp/dockd/)
 [git repository](https://github.com/libthinkpad/dockd)
 
 ## Table of Contents
 
-- [Do you need dockd?](#doyouneeddockd)
-- [How does dockd work?](#howdoesdockdwork)
-- [How to install dockd?](#howtoinstalldockd)
-- [How to use dockd?](#howtousedockd)
-- [What if I change the monitor I used to configure the dock?](#whatifichangethemonitoriusedtoconfigurethedock)
-- [Dock and undock hooks](#dockandundockhooks)
+- [Do you need dockd?](#do-you-need-dockd)
+- [How does dockd work?](#how-does-dockd-work)
+- [How to install dockd?](#how-to-install-dockd)
+- [How to use dockd?](#how-to-use-dockd)
+- [What if I change the monitor I used to configure the dock?](#what-if-i-change-the-monitor-i-used-to-configure-the-dock)
+- [Dock and undock hooks](#dock-and-undock-hooks)
 - [Changelog](#changelog)
 
 ---
