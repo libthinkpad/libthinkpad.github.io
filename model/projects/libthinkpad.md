@@ -6,7 +6,7 @@ All ThinkPads.org use this library in some way.
 
 [Doxygen documentation](/doxy/libthinkpad)
 
-Latest version: 2.3
+Latest version: 2.6
 Developer: Ognjen Galić <smclt30p@gmail.com>
 [Upstream releases](http://thinkpads.org/ftp/libthinkpad/)
 [git repository](https://github.com/libthinkpad/libthinkpad)
