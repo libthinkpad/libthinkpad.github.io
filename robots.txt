@@ -2,5 +2,5 @@ Sitemap: http://thinkpads.org/sitemap.xml
 
 # Global
 User-agent: *
-Disallow:
+Disallow: doxy/*
 Allow: /*
