@@ -15,6 +15,8 @@
     <p class="post-author">{{ post.get_author() }} - {{ post.get_date() }}</p>
     <img width="460" src="{{ post.get_image() }}">
 
-    {{ post.get_content_html() }}
+    <div class="post-wrap">
+         {{ post.get_content_html() }}
+    </div>
 
 {% endblock %}

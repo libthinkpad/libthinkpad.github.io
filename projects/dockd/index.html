@@ -12,30 +12,55 @@
     <body>
         <div id="header-cont">
             <header>
-                <table>
-                    <tbody>
-                        <td>
-                            <a href="/"><img id="logo" src="/res/logo.png"></a>
-                        </td>
-                        <td>
-                            <ul id="navigation">
-                                <a href="/"><li class="nav-item">Home</li></a>
-                                <a href="/blog"><li class="nav-item">Blog</li></a>
-                                <a href="/projects"><li class="nav-item">Projects</li></a>
-                                <a href="/repositories"><li class="nav-item">Repositories</li></a>
-                                <a href="/ftp"><li class="nav-item">File Index</li></a>
-                                <a href="/fru"><li class="nav-item">FRU Lookup</li></a>
-                                <a href="/about"><li class="nav-item">About us</li></a>
-                            </ul>
-                        </td>
-                    </tbody>
-                </table>
+                <div>
+                    <a href="/"><img id="logo" src="/res/logo.png"></a>
+                </div>
+                <div class="btn-cont">
+                    <a href="https://github.com/libthinkpad"><img src="/res/repo.png"></a>
+                </div>
             </header>
         </div>
 
-        <div id="body-wrap">
-            
+        <div id="master-container">
+
+            <div id="sidebar-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog - recent</a>
+                        <ul>
+                            
+                                <a href="/blog/how-to-buy-a-thinkpad-x220"><li>How to buy a used ThinkPad X220</li></a>
+                            
+                                <a href="/blog/more-models-now-supported-in-libthinkpad-version-2.6"><li>More models now supported in libthinkpad version 2.6</li></a>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="/projects">Projects</a>
+                         <ul>
+                            
+                                <a href="/projects/dockd"><li>dockd</li></a>
+                            
+                                <a href="/projects/libthinkpad"><li>libthinkpad</li></a>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="/repositories">Repositories</a>
+                        <ul>
+                            <a href="/repositories/#ubuntu"><li>Ubuntu</li></a>
+                            <a href="/repositories/#ubuntu"><li>Arch Linux</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="/ftp">FTP Index</a></li>
+                    <li><a style="color: red" href="/fru">FRU System Service Parts</a></li>
+                    <li><a href="/about">About us/contact</a></li>
+                </ul>
+
+            </div>
+
+            <div id="body-wrap">
+                
     <h1>dockd Documentation - ThinkPads.org</h1>
+    <div class="post-wrap">
     <p>When moving from Windows to Linux on a lightweight desktop environment like Xfce or LXDE, using the dock is really hard.<br />
 Usually nothing happens when you insert the dock, and you use xrandr to configure your displays. Then, you remove the ThinkPad <br />
 from the dock and the screen stays blank.</p>
@@ -189,8 +214,8 @@ This is free software: you are free to change and redistribute it.<br />
 There is NO WARRANTY, to the extent permitted by law.</p>
 <p>Written by Ognjen Galic<br />
 See --help for more information<br />
-<code>``
-__5) Install</code>acpid`__</p>
+```</p>
+<p><strong>5) Install <code>acpid</code></strong></p>
 <p>In order for dockd to support docks such as the MiniDock Series 3, you need<br />
 <code>acpid</code> to support it.</p>
 <p><strong>6) Create the needed directories</strong></p>
@@ -257,8 +282,11 @@ layouts, sound outputs and so on.     </p>
 <p><strong><em>What's new in version 1.21</em></strong><br />
 * Added support for dock and undock hooks</p>
 <p><a href="#">Back to top</a></p>
+    </div>
 
-        </div>
+            </div>
+
+            </div>
 
         <div id="footer-cont">
             <footer>

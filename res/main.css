@@ -16,6 +16,11 @@ p, li, label, a {
     font-size: 0.875em;
 }
 
+p {
+    line-height: 1.3em;
+}
+
+
 h1 {
     font-size: 1.75em;
 }
@@ -35,11 +40,30 @@ h2 {
 }
 
 #header-cont {
-   border-bottom: 1px solid #d2d2d2; 
+   border-bottom: 1px solid #d2d2d2;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn-cont img {
+    max-height: 50px;
+    margin-left: 20px;
 }
 
 #body-wrap {
     margin-left: 25px;
+    max-width: max-content;
 }
 
 code {
@@ -51,6 +75,7 @@ code {
     border-radius: 3px;
     margin: 2px;
     font-family: monospace;
+    white-space: pre;
 }
 
 body {
@@ -100,6 +125,7 @@ footer {
 .fru-table td {
     border: 1px solid #d1d1d1;
     padding: 3px;
+    font-size: 0.85em;
 }
 
 
@@ -182,4 +208,45 @@ th input {
     width: 460;
     margin: unset;
     border: 0.5px solid #d2d2d2;
+}
+
+.post-wrap {
+    width: 460px;
+}
+
+.post-wrap img {
+    max-width: 460px;
+    max-height: 460px;
+    margin: 20px 20px 20px 0;
+}
+
+#sidebar-nav {
+    min-width: 270px;
+    width: 270px;
+    border-right: 1px solid #d2d2d2;
+    text-decoration: none;
+}
+
+#sidebar-nav li {
+    margin: 5px;
+}
+
+#master-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+a, a > li {
+    text-decoration: none;
+    font-size: 0.91em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li > ul {
+    padding-left: 10px;
 }

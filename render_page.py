@@ -152,6 +152,48 @@ class BlogPostFetcher:
                 ret.append(post)
         return ret
 
+class RecentObjectFetcher:
+    """
+    This fetches recent posts and projects for the sidebar
+    """
+
+    @staticmethod
+    def __get_recent_posts() -> List[tuple]:
+        """
+        This fetches 5 recent posts
+        :return: A list of tuples
+        """
+        fetcher = BlogPostFetcher("model/posts/")
+        posts = fetcher.get_posts()
+        ret = []
+        for i in range(0, len(posts)):
+            if i > 5:
+                break
+            ret.append((posts[i].get_file(), posts[i].get_title()))
+        return ret
+
+    @staticmethod
+    def __get_recent_projets() -> List[str]:
+        """
+        This fetches up to 5 recent projects
+        :return: Recent projects
+        """
+        ret = []
+        i = 0
+        for files in os.listdir("model/projects"):
+            i += 1
+            if i > 5:
+                break
+            ret.append(files.replace(".md", ""))
+        return ret
+
+    @staticmethod
+    def get_recent_data() -> dict:
+        payload = {
+            "posts": RecentObjectFetcher.__get_recent_posts(),
+            "projects": RecentObjectFetcher.__get_recent_projets()
+        }
+        return payload
 
 class Renderer:
     """
@@ -176,7 +218,8 @@ class SingleBlogPostRenderer(Renderer):
         self.post = post
 
     def render(self):
-        return self.template.render(post=self.post)
+        return self.template.render(post=self.post,
+                                    recent=RecentObjectFetcher.get_recent_data())
 
 
 class BlogIndexRenderer(Renderer):
@@ -190,7 +233,8 @@ class BlogIndexRenderer(Renderer):
         super().__init__(env)
 
     def render(self):
-        return self.template.render(posts=self.posts)
+        return self.template.render(posts=self.posts,
+                                    recent=RecentObjectFetcher.get_recent_data())
 
 class MarkdownRenderer(Renderer):
     """
@@ -208,7 +252,8 @@ class MarkdownRenderer(Renderer):
         with codecs.open("model/{}".format(self.file), mode="r", encoding="utf-8") as file:
             data = file.read()
             text =  markdown(data, extensions=["markdown.extensions.nl2br"])
-            return self.template.render(text=text, title=self.title)
+            return self.template.render(text=text, title=self.title,
+                                    recent=RecentObjectFetcher.get_recent_data())
 
 class ProjectsPageGenerator(Renderer):
     """
@@ -233,7 +278,7 @@ class FRUPageRenderer(Renderer):
         self.template = env.get_template("fru.html")
 
     def render(self):
-        return self.template.render()
+        return self.template.render(recent=RecentObjectFetcher.get_recent_data())
 
 
 class PageGenerator:
