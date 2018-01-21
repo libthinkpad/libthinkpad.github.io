@@ -32,7 +32,7 @@ def add_url(root, url: str):
     loc = SubElement(element, "loc")
     loc.text = "http://thinkpads.org/" + url
     lastmod = SubElement(element, "lastmod")
-    lastmod.text = time.strftime("%Y-%m-%dT%H:%M:%S%z")
+    lastmod.text = time.strftime("%Y-%m-%dT%H:%M:%S" + "+00:00")
     changefreq = SubElement(element, "changefreq")
     changefreq.text = "monthly"
     priority = SubElement(element, "priority")
