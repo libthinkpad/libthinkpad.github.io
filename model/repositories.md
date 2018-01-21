@@ -41,6 +41,8 @@ Next, use one of the repositories provided:
 
 All our packages are available in the Arch User Repository (AUR).    
 
+[dockd](https://aur.archlinux.org/packages/dockd)
+[libthinkpad](https://aur.archlinux.org/packages/libthinkpad)
 
 ## Other distros
 

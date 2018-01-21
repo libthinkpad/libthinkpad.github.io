@@ -82,7 +82,6 @@ footer {
 
 .body-wrap-fru {
     padding-bottom: 50px;
-    margin-left: 25px;
 }
 
 .fru-table {
@@ -164,8 +163,23 @@ th input {
     float: left;
 }
 
-.subtitle {
-    color: #6d6d6d;
-    line-height: 10px;
-    font-size: 0.7em;
+.post-title {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.post-author, post-date {
+    margin: 10px 10px 20px 0px;
+    font-size: 0.8em;
+    color: #404040;
+}
+
+.index-author {
+    margin: 7px 10px 10px 0px;
+}
+
+.post-div {
+    width: 460;
+    margin: unset;
+    border: 0.5px solid #d2d2d2;
 }

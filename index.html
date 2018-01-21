@@ -1,42 +1,109 @@
 <html>
     <head>
-        <title>Home - ThinkPads.org</title>
+        <title>
+    Home - ThinkPads.org
+</title>
         <link rel="shortcut icon" href="/res/dot.png">
-        <link rel="stylesheet" href="res/main.css"/>
-        <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.2/dist/showdown.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/res/main.css"/>
+        
+
     </head>
     <body>
-    
-        <div id="header-cont"></div>
-        <div id="body-wrap">
-            <h1>Homepage - News</h1>
-        
-            <div id="news-cont"></div>
-            
+        <div id="header-cont">
+            <header>
+                <table>
+                    <tbody>
+                        <td>
+                            <a href="/"><img id="logo" src="/res/logo.png"></a>
+                        </td>
+                        <td>
+                            <ul id="navigation">
+                                <a href="/"><li class="nav-item">Home</li></a>
+                                <a href="/blog"><li class="nav-item">Blog</li></a>
+                                <a href="/projects"><li class="nav-item">Projects</li></a>
+                                <a href="/repositories"><li class="nav-item">Repositories</li></a>
+                                <a href="/ftp"><li class="nav-item">File Index</li></a>
+                                <a href="/fru"><li class="nav-item">FRU Lookup</li></a>
+                                <a href="/about"><li class="nav-item">About us</li></a>
+                            </ul>
+                        </td>
+                    </tbody>
+                </table>
+            </header>
         </div>
-        
-        <div id="footer-cont"></div>
-        
+
+        <div id="body-wrap">
+            
+    <h1>Home - ThinkPads.org</h1>
+    <h2>More models now supported in libthinkpad version 2.6</h2>
+<p>A new version of libthinkpad has been released that fixes dock detection  <br />
+on a lot of newer ThinkPad models, including the P5X, and P7X series of laptops,     <br />
+as well as the majority of the XX50, XX60 and XX70 fleet.     </p>
+<p>Related patch: <a href="https://patchwork.kernel.org/patch/9416841/">https://patchwork.kernel.org/patch/9416841/</a></p>
+<p>Special thanks to Raphaël Doursenaud for reporting the issue!     </p>
+<p>Author: Ognjen Galić <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>   <br />
+Date: 17th January 2018</p>
+<h2>Added support for the Mini Dock Series 3 in dockd!</h2>
+<p>A new version of libthinkpad has been released that fixes dock detection  <br />
+for the Mini Dock Series 3 dock for various models. Get the new version now!   </p>
+<p>Author: Ognjen Galić <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>  <br />
+Date: 23rd November 2017   </p>
+<h2>Added support for Ubuntu 16.10 Yakkety Yak!</h2>
+<p>Somehow we overlooked Yakkety Yak when packaing for Ubuntu. Official repositories for Yakkety Yak are available  <br />
+on the <a href="/repositories">repositories</a> page.</p>
+<p>Author: Ognjen Galić <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>  <br />
+Date: 19th November 2017  </p>
+<h2>New website design!</h2>
+<p>The site has been redesigned and the original Doxygen webpage has moved to the documentation of the libthinkpad library.  <br />
+Hope you like the new website!    </p>
+<p>Author: Ognjen Galić <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>  <br />
+Date: 19th November 2017    </p>
+<h2>dockd version 1.20 released</h2>
+<p>This is the first public release of dockd that has been tested locally and is open to public testing on other platforms.  <br />
+The library and executable have been tested on a ThinkpPad X220 and a Ultrabase Series 3, and are expected to work on any  <br />
+pre-XX40 series laptop and dock.     </p>
+<p>In order to support laptops and docks after the XX40 series (including the P50/51/T450+) we need people who can dedicate their  <br />
+time and hardware to get it developed and tested.    </p>
+<p>If you are willing to spare some time to test new hardware you can find me over at Freenode in #ibmthinkpad or contact me via  <br />
+email and we will meet on IRC.</p>
+<p>Changelog:</p>
+<ul>
+<li>Removed udev dependency and mirgrated triggering to libthinkpad</li>
+<li>Added support for switching display modes when waking/sleeping the ThinkPad</li>
+<li>First public release</li>
+</ul>
+<p>Any bugs can be reported on <a href="https://github.com/libthinkpad/dockd/issues">GitHub</a>.</p>
+<p>Author: Ognjen Galić <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>  <br />
+Date: 18th November 2017 </p>
+
+        </div>
+
+        <div id="footer-cont">
+            <footer>
+                <div id="footer-container">
+                    <p>Hosted by:</p>
+                    <div id="github-logo-cont">
+                        <img class="github-logo" src="/res/github.png"/>
+                    </div>
+                    <p>Thanks guys!</p>
+                    <p>Copyright (c) 2017 ThinkPads.org</p>
+                    <!-- Start of SimpleHitCounter Code -->
+                    <div align="center">
+                    <a href="https://info.flagcounter.com/h46d">
+                        <img src="https://s01.flagcounter.com/count/h46d/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_0/pageviews_1/flags_0/percent_0/"
+                             alt="Flag Counter" border="0"></a>
+                    </div>
+                    <!-- End of SimpleHitCounter Code -->
+                    </div>
+                    <div align="center" style="padding: 10px">
+                        <img src="/res/notepad.gif"/>
+                    </div>
+                    <div align="center">
+                    <img src="/res/ns_logo.gif"/>
+                    <img src="/res/ie_logo.gif"/>
+                    <img src="/res/noframes.gif"/>
+                    </div>
+            </footer>
+        </div>
     </body>
-    
-    <script src="res/header.js" type="text/javascript"></script>
-    <script src="res/footer.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    
-        var news = document.getElementById("news-cont");
-
-        var newReq = new XMLHttpRequest();
-        newReq.onreadystatechange = function() {
-            if (newReq.readyState == XMLHttpRequest.DONE && newReq.status == 200) {
-
-                var converter = new showdown.Converter();
-                news.innerHTML = converter.makeHtml(newReq.responseText);
-
-            }
-        }
-
-        newReq.open("GET", "model/news.md");
-        newReq.send();
-    
-    </script>
 </html>

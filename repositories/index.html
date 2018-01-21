@@ -1,42 +1,116 @@
 <html>
     <head>
-        <title>Software Repositories - ThinkPads.org</title>
+        <title>
+    Software Repositories - ThinkPads.org
+</title>
         <link rel="shortcut icon" href="/res/dot.png">
         <link rel="stylesheet" href="/res/main.css"/>
-        <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.2/dist/showdown.min.js" type="text/javascript"></script>
+        
+
     </head>
     <body>
-    
-        <div id="header-cont"></div>
-        <div id="body-wrap">
-            <h1>Software Repositories on ThinkPads.org</h1>
-        
-            <div id="news-cont"></div>
-            
+        <div id="header-cont">
+            <header>
+                <table>
+                    <tbody>
+                        <td>
+                            <a href="/"><img id="logo" src="/res/logo.png"></a>
+                        </td>
+                        <td>
+                            <ul id="navigation">
+                                <a href="/"><li class="nav-item">Home</li></a>
+                                <a href="/blog"><li class="nav-item">Blog</li></a>
+                                <a href="/projects"><li class="nav-item">Projects</li></a>
+                                <a href="/repositories"><li class="nav-item">Repositories</li></a>
+                                <a href="/ftp"><li class="nav-item">File Index</li></a>
+                                <a href="/fru"><li class="nav-item">FRU Lookup</li></a>
+                                <a href="/about"><li class="nav-item">About us</li></a>
+                            </ul>
+                        </td>
+                    </tbody>
+                </table>
+            </header>
         </div>
-        
-        <div id="footer-cont"></div>
-        
+
+        <div id="body-wrap">
+            
+    <h1>Software Repositories - ThinkPads.org</h1>
+    <p>We provide pre-built binaries for all projects that we host. Supported distributions are:     </p>
+<ul>
+<li><a href="#ubuntu">Ubuntu</a></li>
+<li><a href="#archlinux">Arch Linux</a></li>
+<li><a href="#otherdistros">Other Distros</a></li>
+</ul>
+<h2>Ubuntu</h2>
+<p>The ThinkPads.org team manages a couple of official repositories for versions of Ubuntu after Xenial Xerus.   <br />
+That includes:</p>
+<ul>
+<li>Ubuntu 17.10 Artful Ardwark (artful)</li>
+<li>Ubuntu 17.04 Zesty Zepus (zesty)</li>
+<li>Ubuntu 16.10 Yakkety Yak (yakkety)</li>
+<li>Ubuntu 16.04 Xenial Xerus (xenial)</li>
+</ul>
+<p>To use them, first add the ThinkPads.org owner's GPG key:    </p>
+<p><code>wget -q -O - http://thinkpads.org/repo/ubuntu/thinkpads.gpg.key | sudo apt-key add -</code>   </p>
+<p>Next, use one of the repositories provided:</p>
+<ul>
+<li>Ubuntu 17.10 Artful Ardwark (artful)    </li>
+</ul>
+<p><code>echo "deb http://thinkpads.org/repo/ubuntu artful main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+<ul>
+<li>Ubuntu 17.04 Zesty Zepus (zesty)    </li>
+</ul>
+<p><code>echo "deb http://thinkpads.org/repo/ubuntu zesty main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+<ul>
+<li>Ubuntu 16.10 Yakkety Yak (yakkety)    </li>
+</ul>
+<p><code>echo "deb http://thinkpads.org/repo/ubuntu yakkety main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+<ul>
+<li>Ubuntu 16.04 Xenial Xerus (xenial)    </li>
+</ul>
+<p><code>echo "deb http://thinkpads.org/repo/ubuntu xenial main" | sudo tee /etc/apt/sources.list.d/thinkpads.list</code>    </p>
+<h2>Arch Linux</h2>
+<p>All our packages are available in the Arch User Repository (AUR).    </p>
+<p><a href="https://aur.archlinux.org/packages/dockd">dockd</a><br />
+<a href="https://aur.archlinux.org/packages/libthinkpad">libthinkpad</a></p>
+<h2>Other distros</h2>
+<p>We need packagers. If you are willing to package code for ThinkPads.org for other distributions, feel free to contact  <br />
+us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#109;&#99;&#108;&#116;&#51;&#48;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</p>
+<p>Currently help is wanted for:</p>
+<ul>
+<li>Debian    </li>
+<li>Fedora    </li>
+<li>openSUSE    </li>
+</ul>
+
+        </div>
+
+        <div id="footer-cont">
+            <footer>
+                <div id="footer-container">
+                    <p>Hosted by:</p>
+                    <div id="github-logo-cont">
+                        <img class="github-logo" src="/res/github.png"/>
+                    </div>
+                    <p>Thanks guys!</p>
+                    <p>Copyright (c) 2017 ThinkPads.org</p>
+                    <!-- Start of SimpleHitCounter Code -->
+                    <div align="center">
+                    <a href="https://info.flagcounter.com/h46d">
+                        <img src="https://s01.flagcounter.com/count/h46d/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_0/pageviews_1/flags_0/percent_0/"
+                             alt="Flag Counter" border="0"></a>
+                    </div>
+                    <!-- End of SimpleHitCounter Code -->
+                    </div>
+                    <div align="center" style="padding: 10px">
+                        <img src="/res/notepad.gif"/>
+                    </div>
+                    <div align="center">
+                    <img src="/res/ns_logo.gif"/>
+                    <img src="/res/ie_logo.gif"/>
+                    <img src="/res/noframes.gif"/>
+                    </div>
+            </footer>
+        </div>
     </body>
-    
-    <script src="/res/header.js" type="text/javascript"></script>
-    <script src="/res/footer.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    
-        var news = document.getElementById("news-cont");
-
-        var newReq = new XMLHttpRequest();
-        newReq.onreadystatechange = function() {
-            if (newReq.readyState == XMLHttpRequest.DONE && newReq.status == 200) {
-
-                var converter = new showdown.Converter();
-                news.innerHTML = converter.makeHtml(newReq.responseText);
-
-            }
-        }
-
-        newReq.open("GET", "/model/repositories.md");
-        newReq.send();
-    
-    </script>
 </html>

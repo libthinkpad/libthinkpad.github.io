@@ -1,0 +1,6 @@
+Sitemap: https://thinkpads.org/sitemap.xml
+
+# Global
+User-agent: *
+Disallow:
+Allow: /*

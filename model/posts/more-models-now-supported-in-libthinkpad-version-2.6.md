@@ -11,7 +11,7 @@ Get the new version in our Ubuntu repositories or the Arch AUR.
 Special thanks to Raphaël Doursenaud for reporting the issue!     
 
 ---       
-Written-by: Ognjen Galić <smclt30p@gmail.com>     
+Written-by: Ognjen Galić <smclt30p@gmail.com>
 Posted-on: 17th January 2018
 Short-description: Support for a whole new fleet of laptops added to the library!
 Image: /res/t470.jpg

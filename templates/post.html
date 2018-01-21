@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ post.get_title() }} - ThinkPads.org
+{% endblock %}
+
+{% block metadata %}
+    <meta property="og:title" content="{{ post.get_title() }}" />
+    <meta property="og:image" content="{{ post.get_image() }}" />
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="post-title">{{ post.get_title() }}</h1>
+    <p class="post-author">{{ post.get_author() }} - {{ post.get_date() }}</p>
+    <img width="460" src="{{ post.get_image() }}">
+
+    {{ post.get_content_html() }}
+
+{% endblock %}
