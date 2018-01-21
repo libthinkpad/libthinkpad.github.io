@@ -1,4 +1,4 @@
-Sitemap: https://thinkpads.org/sitemap.xml
+Sitemap: http://thinkpads.org/sitemap.xml
 
 # Global
 User-agent: *
