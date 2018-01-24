@@ -1,161 +1,204 @@
-<html>
-    <head>
-        <title>
-    FRU Index - ThinkPads.org
-</title>
-        <link rel="shortcut icon" href="/res/dot.png">
-        <link rel="stylesheet" href="/res/main.css"/>
-        <meta name="google-site-verification" content="HNTc72hzQ7qrGaTSYKFebEjAXclnIHOdPxopdbUghu8" />
-        
+--- 
+layout: fru 
+title: FRU Index - ThinkPads.org 
+permalink: fru/ 
+---
 
-    </head>
-    <body>
-        <div id="header-cont">
-            <header>
-                <div>
-                    <a href="/"><img id="logo" src="/res/logo.png"></a>
-                </div>
-                <div class="btn-cont">
-                    <a href="https://github.com/libthinkpad"><img src="/res/repo.png"></a>
-                </div>
-            </header>
-        </div>
+<style>
+    * {
+        font-family: sans-serif;
+    }
+    
+    .body-wrap-fru {
+    padding-bottom: 50px;
+}
 
-        <div id="master-container">
+.fru-table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-            <div id="sidebar-nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/blog">Blog - recent</a>
-                        <ul>
-                            
-                                <a href="/blog/how-to-buy-a-thinkpad-x220"><li>How to buy a used ThinkPad X220</li></a>
-                            
-                                <a href="/blog/more-models-now-supported-in-libthinkpad-version-2.6"><li>More models now supported in libthinkpad version 2.6</li></a>
-                            
-                        </ul>
-                    </li>
-                    <li><a href="/projects">Projects</a>
-                         <ul>
-                            
-                                <a href="/projects/dockd"><li>dockd</li></a>
-                            
-                                <a href="/projects/libthinkpad"><li>libthinkpad</li></a>
-                            
-                        </ul>
-                    </li>
-                    <li><a href="/repositories">Repositories</a>
-                        <ul>
-                            <a href="/repositories/#ubuntu"><li>Ubuntu</li></a>
-                            <a href="/repositories/#arch-linux"><li>Arch Linux</li></a>
-                        </ul>
-                    </li>
-                    <li><a href="/ftp">FTP Index</a></li>
-                    <li><a style="color: red" href="/fru">FRU System Service Parts</a></li>
-                    <li><a href="/about">About us/contact</a></li>
-                </ul>
+.fru-table th {
+    border: 1px solid #d1d1d1;
+    padding: 3px;
+    background: #dbf9ff;
+}
 
-            </div>
+.fru-table td {
+    border: 1px solid #d1d1d1;
+    padding: 3px;
+    font-size: 0.85em;
+}
 
-            <div id="body-wrap">
-                
 
-        <div id="body-fru-model" class="body-wrap-fru" style="display: none">
-            <h1>FRU Lookup and system service parts index</h1>
-            <p>Please search and select your ThinkPad Model</p>
-            <p style="color: gray">Data updated on the 3rd of January 2018</p>
-            <label>Model:</label>
-            <input oninput="perform_search(this)" id="search">
-            <button onclick="clear_search()">Clear</button>
-            <p class="status">Loading...</p>
-            <table class="fru-table alternate" id="fru-table-main">
-                    <tr>
-                        <th class="fru-model">Model</th>
-                        <th class="ass">LCD assembly diagram</th>
-                        <th class="ass">Main assembly diagram</th>
-                        <th class="fru-idx">FRU Index</th>
-                    </tr>
-                <tbody id="fru-table-body">
-                </tbody>
-            </table>
-        </div>
+.fru-idx {
+    width: 30%;
+}
 
-        <div id="body-fru-data" class="body-wrap-fru" style="display: none">
-            <h1 id="body-fru-data-title">FRU/System service parts index for ThinkPad </h1>
-            <p class="status">Loading, this could take a while...</p>
+.ass {
+    width: 25%;
+}
 
-            <p id="show-diags" style="display: none" onclick="diagram_fold(this)" class="diagram-link">+ Body diagrams</p>
+.alternate tr:nth-child(odd) {
+    background: white;
+}
 
-            <div id="diagram-fold" style="display: none">
+.alternate tr:nth-child(even) {
+    background: #f1f1f1;
+}
 
-                <p>Click the numbers to filter the parts</p>
+.alternate tr:hover {
+    background: #dadada;
+}
 
-                <img usemap="#hotspots-lcd" class="body-diagram">
-                <img usemap="#hotspots-main" class="body-diagram">
+.fru-model {
+    width: 40%
+}
 
-            </div>
+th input {
+    width: 100%;
+}
 
-            <button onclick="clear_search()">Clear filters</button>
-            <button onclick="window.close()">Close</button>
-            <table class="fru-table alternate" id="fru-table-parts">
+.ass-div {
+    margin: 0;
+    padding: 0;
+}
 
-                <col width="8%">
-                <col width="35%">
-                <col width="10%">
-                <col width="10%">
-                <col width="10%">
-                <col width="5%">
-                <col width="5%">
+.part-img {
+    max-width: 250px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
 
-                <tr>
-                    <th><input id="sr-fru" oninput="perform_multisearch()"></th>
-                    <th><input id="sr-title" oninput="perform_multisearch()"></th>
-                    <th><input id="sr-cls" oninput="perform_multisearch()"></th>
-                    <th><input id="sr-pic" onchange="perform_multisearch()" type="checkbox"></th>
-                    <th><input id="sr-price"  onchange="perform_multisearch()" type="checkbox"></th>
-                </tr>
-                <tr>
-                        <th>FRU</th>
-                        <th>Title</th>
-                        <th>Class</th>
-                        <th>Pictures</th>
-                        <th>Lenovo price</th>
-                        <th>Google</th>
-                        <th>eBay</th>
-                    </tr>
-                <tbody id="fru-table-body-parts">
-                </tbody>
-            </table>
+#img-main {
+     overflow: hidden;   
+}
 
-        </div>
+.diagram-link {
+    font-size: 0.875em;
+    text-decoration: underline;
+    color: #0f47ef;
+    cursor: pointer;
+}
 
-        <div style="display: none">
+.body-diagram {
+    margin-right: 20px;
+}
+    
+    .flag-counter {
+        margin: 20px;
+    }
+    
+    .logo {
+        max-height: 50px;
+        margin-left: 20px;
+    }
+    
+    .fru-body-master {
+        margin: 20px;
+    }
+    
+</style>
 
-            <div class="ass-div" id="lcd-template">
-            <a onclick="open_lcd_ass(event)" href="#">LCD Assembly</a>
-            <img src="/res/new-window.png">
-            </div>
+<div id="body-fru-model" class="body-wrap-fru" style="display: none">
+    <h1>FRU Lookup and system service parts index</h1>
+    <p>Please search and select your ThinkPad Model</p>
+    <p style="color: gray">Data updated on the 3rd of January 2018</p>
+    <label>Model:</label>
+    <input oninput="perform_search(this)" id="search">
+    <button onclick="clear_search()">Clear</button>
+    <p class="status">Loading...</p>
+    <table class="fru-table alternate" id="fru-table-main">
+        <tr>
+            <th class="fru-model">Model</th>
+            <th class="ass">LCD assembly diagram</th>
+            <th class="ass">Main assembly diagram</th>
+            <th class="fru-idx">FRU Index</th>
+        </tr>
+        <tbody id="fru-table-body">
+        </tbody>
+    </table>
+</div>
 
-             <div class="ass-div" id="main-template">
-            <a href="#" onclick="open_main_ass(event)">Main Assembly</a>
-            <img src="/res/new-window.png">
-            </div>
+<div id="body-fru-data" class="body-wrap-fru" style="display: none">
+    <h1 id="body-fru-data-title">FRU/System service parts index for ThinkPad </h1>
+    <p class="status">Loading, this could take a while...</p>
 
-            <div class="ass-div" id="pic-template">
-            <a href="#" onclick="open_pics(event)">Pictures</a>
-            <img src="/res/new-window.png">
-            </div>
+    <p id="show-diags" style="display: none" onclick="diagram_fold(this)" class="diagram-link">+ Body diagrams</p>
 
-            <div class="ass-div" id="fru-template">
-            <a onclick="fru_idx_open(event)" href="#">FRU Index</a>
-            <img src="/res/new-window.png">
-            </div>
+    <div id="diagram-fold" style="display: none">
 
-        </div>
+        <p>Click the numbers to filter the parts</p>
 
-    <script type="text/javascript">
+        <img usemap="#hotspots-lcd" class="body-diagram">
+        <img usemap="#hotspots-main" class="body-diagram">
 
-        String.prototype.contains = function(str) {
+    </div>
+
+    <button onclick="clear_search()">Clear filters</button>
+    <button onclick="window.close()">Close</button>
+    <table class="fru-table alternate" id="fru-table-parts">
+
+        <col width="8%">
+        <col width="35%">
+        <col width="10%">
+        <col width="10%">
+        <col width="10%">
+        <col width="5%">
+        <col width="5%">
+
+        <tr>
+            <th><input id="sr-fru" oninput="perform_multisearch()"></th>
+            <th><input id="sr-title" oninput="perform_multisearch()"></th>
+            <th><input id="sr-cls" oninput="perform_multisearch()"></th>
+            <th><input id="sr-pic" onchange="perform_multisearch()" type="checkbox"></th>
+            <th><input id="sr-price" onchange="perform_multisearch()" type="checkbox"></th>
+        </tr>
+        <tr>
+            <th>FRU</th>
+            <th>Title</th>
+            <th>Class</th>
+            <th>Pictures</th>
+            <th>Lenovo price</th>
+            <th>Google</th>
+            <th>eBay</th>
+        </tr>
+        <tbody id="fru-table-body-parts">
+        </tbody>
+    </table>
+
+</div>
+
+<div style="display: none">
+
+    <div class="ass-div" id="lcd-template">
+        <a onclick="open_lcd_ass(event)" href="#">LCD Assembly</a>
+        <img src="/fru/new-window.png">
+    </div>
+
+    <div class="ass-div" id="main-template">
+        <a href="#" onclick="open_main_ass(event)">Main Assembly</a>
+        <img src="/fru/new-window.png">
+    </div>
+
+    <div class="ass-div" id="pic-template">
+        <a href="#" onclick="open_pics(event)">Pictures</a>
+        <img src="/fru/new-window.png">
+    </div>
+
+    <div class="ass-div" id="fru-template">
+        <a onclick="fru_idx_open(event)" href="#">FRU Index</a>
+        <img src="/fru/new-window.png">
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    String.prototype.contains = function(str) {
             if (this.toLowerCase().indexOf(str.toLowerCase()) == -1) {
                 return false;
             }
@@ -324,7 +367,7 @@
             var url_model = get_url_tp_model();
             if (url_model == null) {
                 show_model_search(true);
-                http_get("/res/fru-mod-tr.html", function(text) {
+                http_get("/fru/fru-mod-tr.html", function(text) {
                     template_html = text;
                     load_models();
                 });
@@ -337,7 +380,7 @@
             document.title = "ThinkPad " + url_model + " system service parts - ThinkPads.org";
 
             http_get("/fru/raw/" + url_model + ".json", function(data) {
-                http_get("/res/fru-data-tr.html", function(template) {
+                http_get("/fru/fru-data-tr.html", function(template) {
                     template_html_data = template;
 
                     var dataJs = JSON.parse(data);
@@ -431,15 +474,15 @@
 
                 part = frudata[i];
 
-                if (fru_text != "" && !part["ID"].contains(fru_text)) {
+                if (fru_text != "" && part["ID"] != null && !part["ID"].contains(fru_text)) {
                     fru_s = false;
                 }
 
-                if (title_text != "" && !part["Name"].contains(title_text)) {
+                if (title_text != "" && part["Name"] != null && !part["Name"].contains(title_text)) {
                     title_s = false;
                 }
 
-                if (class_text != "" && !part["CommodityVal"].contains(class_text)) {
+                if (class_text != "" && part["CommodityVal"] != null && !part["CommodityVal"].contains(class_text)) {
                     class_s = false;
                 }
 
@@ -510,40 +553,4 @@
         }
 
         main();
-
-    </script>
-
-
-            </div>
-
-            </div>
-
-        <div id="footer-cont">
-            <footer>
-                <div id="footer-container">
-                    <p>Hosted by:</p>
-                    <div id="github-logo-cont">
-                        <img class="github-logo" src="/res/github.png"/>
-                    </div>
-                    <p>Thanks guys!</p>
-                    <p>Copyright (c) 2017 ThinkPads.org</p>
-                    <!-- Start of SimpleHitCounter Code -->
-                    <div align="center">
-                    <a href="https://info.flagcounter.com/h46d">
-                        <img src="https://s01.flagcounter.com/count/h46d/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_0/pageviews_1/flags_0/percent_0/"
-                             alt="Flag Counter" border="0"></a>
-                    </div>
-                    <!-- End of SimpleHitCounter Code -->
-                    </div>
-                    <div align="center" style="padding: 10px">
-                        <img src="/res/notepad.gif"/>
-                    </div>
-                    <div align="center">
-                    <img src="/res/ns_logo.gif"/>
-                    <img src="/res/ie_logo.gif"/>
-                    <img src="/res/noframes.gif"/>
-                    </div>
-            </footer>
-        </div>
-    </body>
-</html>
+</script>
