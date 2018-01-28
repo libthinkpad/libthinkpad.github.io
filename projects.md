@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Published projects
+title: Welcome to ThinkPads.org!
 permalink: /projects/
 ---
 
