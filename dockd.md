@@ -218,7 +218,7 @@ Dockd has two configuration files in `/etc/dockd/` that need to be written. Firs
 
 Here is an example of one external monitor on a ThinkPad X220 and a Ultrabase Series 3.
 
-![img](/res/xfceext.png)
+![img](/assets/img/xfceext.png)
 
 * Run `sudo dockd --config docked`
 
@@ -233,7 +233,7 @@ The configuration when docked is now written.
 
 Here is an example of a Lenovo X220 internal panel running at it's native resolution of 1366x768:
 
-![img](/res/xfceint.png)
+![img](/assets/img//xfceint.png)
 
 * Run `sudo dockd --config undocked`
 
@@ -266,7 +266,7 @@ Each time you change the external monitor configuration that you use with your d
 
 Here is an example of one external monitor on a ThinkPad X220 and a Ultrabase Series 3.
 
-![img](/res/xfceext.png)
+![img](/assets/img/xfceext.png)
 
 * Run `sudo dockd --config docked`
 
