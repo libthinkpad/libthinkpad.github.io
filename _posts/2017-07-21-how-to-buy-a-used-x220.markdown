@@ -37,44 +37,6 @@ The password can be removed by opening the machine and shorting the SDA and SCL 
 #### Are the hinges in good condition? (Yes/No)
 __Open the laptop lid to a position of 90 degrees in respect to the keyboard. Put your finger on the top of the lid, and move back and forth using a moderate amount of force. The lid shall not move back and forth, until you reach the hinge force threshold to move the lid.__ <br>
 
-Some ThinkPads like the T61/T60/T400 have a notorious problem with the hinges, in which they
-develop play over time. This is really annoying, as the screen jolts around when you carry
-the laptop around.
-
-[Here is a video demonstrating the issue.](https://www.youtube.com/watch?v=NBUs2_ueX78)
-## How to buy a used ThinkPad X220
-
-### Why the X220?
-The Thinkpad X220 is the last generation of the 12-inch portable by Lenovo that. features the old 7 row keyboard that IBM designed and used since the 1990's. The keyboard was so good, that people actually retrofitted the keyboard to the X230 series of laptops, to squeeze more performance out of them but still retain the old keyboard.
-
-[More info here.](https://github.com/hamishcoleman/thinkpad-ec)
-
-In this guide I will point out key points to watch out when buying a used X220.
-
-### Should I buy one on eBay?
-I'm very skeptical about ThinkPads from eBay, but the folks from [/r/thinkpad](https://www.reddit.com/r/thinkpad) usually have great success with these machines. It's usually a company wanting to upgrade their hardware so the sell the old equipment on eBay.
-
-If you buy one on eBay and it arrives faulty, damaged or the description of the product you received does not match the ad, eBay usually has your back and will force the seller to perform a refund. That is if you are not in a third-world country.
-
-### Assertion list
-Let's start with the actual guide. I designed this guide to be like a software unit test, if all assertions pass the check the machine is good! Let's start.
-
-#### Is the BIOS locked? (Yes/No)
-__Power on the machine, press the F1 key when you see the ThinkPad logo. The machine shall not ask for a password and shall enter the BIOS without any further interaction. All settings in the BIOS shall be accessible.__
-
-As these machines usually come from companies, their IT departments don't remove the BIOS supervisor passwords that some IT departments enforce on the machines. This is a problem for buyers that buy these machines from these companies.
-
-If the BIOS is password-protected, you are severely limited in the functionality of the machine, as installing new operating systems can be a hard or virtually impossible. You also loose the ability to switch between UEFI and Legacy, change virtualization options, turn of Anti-Theft, the possibility to clear the TPM, and more.
-
-If a machine asks for a password, the password can be avoided by pressing the Escape key, and you can enter the limited BIOS and look around, and change some basic settings.
-
-The password can be removed by opening the machine and shorting the SDA and SCL pins on the EEPROM chip that holds the password.
-
-[More info here.](https://www.reddit.com/r/thinkpad/comments/3jin77/x220_and_bios_password/)
-
-#### Are the hinges in good condition? (Yes/No)
-__Open the laptop lid to a position of 90 degrees in respect to the keyboard. Put your finger on the top of the lid, and move back and forth using a moderate amount of force. The lid shall not move back and forth, until you reach the hinge force threshold to move the lid.__ <br>
-
 Some ThinkPads like the T61/T60/T400 have a notorious problem with the hinges, in which they develop play over time. This is really annoying, as the screen jolts around when you carry the laptop around.
 
 [Here is a video demonstrating the issue.](https://www.youtube.com/watch?v=NBUs2_ueX78)
