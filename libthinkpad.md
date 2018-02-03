@@ -1,7 +1,7 @@
 ---
 layout: page
 title: libthinkpad Documentation
-permalink: /projects/libthinkpad
+permalink: /projects/libthinkpad/
 ---
 
 This library was created to abstract away all Lenovo ThinkPad-specific hardware like the docks and the ThinkLight. This library

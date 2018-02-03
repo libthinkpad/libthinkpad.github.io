@@ -1,7 +1,7 @@
 ---
 layout: page
 title: dockd Documentation
-permalink: /projects/dockd
+permalink: /projects/dockd/
 ---
 
 When moving from Windows to Linux on a lightweight desktop environment like Xfce or LXDE, using the dock is really hard. Usually nothing happens when you insert the dock, and you use xrandr to configure your displays. Then, you remove the ThinkPad from the dock and the screen stays blank.
