@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Contributors
+permalink: /contributors/
 ---
 
 We are a small team of developers, testers and generally nice people that want to make your experience using ThinkPads on Linux just a little bit more enjoyable. 
@@ -21,7 +21,7 @@ He is 18 years old and is from Banja Luka, Bosnia and Herzegovina.
  
 ![email](/assets/img/mail.png): <smclt30p@gmail.com>     
 ![irc](/assets/img/irc.png): __smclt30p__ on Freenode     
-![github](/assets/img/github_icon.png): [smclt30p](https://www.github.com/smlb)    
+![github](/assets/img/github_icon.png): [smclt30p](https://www.github.com/smclt30p)    
 
 ### <img title="Italy" src="/assets/img/italy.png"/> &nbsp; smlb   
 
