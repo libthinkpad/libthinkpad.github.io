@@ -23,7 +23,7 @@ In order to test performance of a mixed I/O heavy work load, I used the Phoronix
 * 4.15.0-13-generic
 * 4.16-insecure
 
-The 4.13 kernel is the original kernel Ubuntu keeps when installing a system for rollbacks, the 4.15 kernel is the latest kernel for Ubuntu 18.04 LTS, and 4.16-insecure is my own custom build of the mainline kernel provided by the Ubuntu Mainline kernel team, but with the retpoline and KPTI patches disabled via the config.
+The 4.13 kernel is the original kernel Ubuntu keeps when installing a system for rollbacks. This kernel has no patches for Spectre and Meltdown. The 4.15 kernel is the latest kernel for Ubuntu 18.04 LTS with the KPTI and retpoline patchset applied and enabled, and 4.16-insecure is my own custom build of the mainline kernel provided by the Ubuntu Mainline kernel team, but with the retpoline and KPTI patches disabled via the config.
 
 First, let's look at the results from the Phoronix test suite. The results are in MB/s.
 
