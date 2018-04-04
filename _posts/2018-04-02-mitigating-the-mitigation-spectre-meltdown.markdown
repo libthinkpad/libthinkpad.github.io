@@ -11,7 +11,7 @@ Lately I noticed that my personal ThinkPad X220 is really sluggish, and I needed
 
 ![logo](/assets/img/screenshot_retpo.png)
 
-After a recent system upgrade from Ubuntu 17.10 to Ubuntu 18.10, I noticed that my system just feels slower. Opening PyCharm takes ages, compiling the Ubuntu kernel takes 30 minutes more and Firefox is struggling to render complex pages such as YouTube. I blamed it on my old SSD and brushed it off, but it started to get *really* annoying, considering my i5-2520m is performing like a last-gen i5 M540 in my dads ThinkPad X201.
+After a recent system upgrade from Ubuntu 17.10 to Ubuntu 18.04, I noticed that my system just feels slower. Opening PyCharm takes ages, compiling the Ubuntu kernel takes 30 minutes more and Firefox is struggling to render complex pages such as YouTube. I blamed it on my old SSD and brushed it off, but it started to get *really* annoying, considering my i5-2520m is performing like a last-gen i5 M540 in my dads ThinkPad X201.
 
 Turns out, the real problem here is the mitigation for the x86 "security" bugs, more specifically repoline and KPTI.
 
