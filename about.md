@@ -50,3 +50,17 @@ He is the author of arch-audit, the security auditing tool for Arch Linux.
 ![irc](/assets/img/irc.png): __ilpianista__ on Freenode      
 ![github](/assets/img/github_icon.png): [ilpianista](https://www.github.com/ilpianista)     
 ![web](/assets/img/web.png): [https://andreascarpino.it/](https://andreascarpino.it/)     
+
+
+### <img title="Italy" src="/assets/img/italy.png"/> &nbsp; Flavio Castelli  
+
+<img style="width: 200px" src="https://avatars1.githubusercontent.com/u/22728?s=400&v=4">   
+
+*(aka. flavio)*
+
+A software engineer from Italy currently working in SUSE as a engineering manager on the
+containers team. He is the maintainer of the openSUSE packages from thinkpads.org.
+
+![email](/assets/img/mail.png): <flavio@castelli.me>     
+![web](/assets/img/web.png): [https://flavio.castelli.me/](https://flavio.castelli.me/)     
+![github](/assets/img/github_icon.png): [flavio](https://www.github.com/flavio)     
