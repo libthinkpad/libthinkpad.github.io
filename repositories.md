@@ -8,6 +8,7 @@ We provide pre-built binaries for all projects that we host. Supported distribut
 
 - [Ubuntu](#ubuntu)
 - [Arch Linux](#archlinux)
+- [openSUSE](#opensuse)
 - [Other Distros](#otherdistros)
 
 ## Ubuntu
@@ -49,6 +50,11 @@ All our packages are available in the Arch User Repository (AUR).
 
 [dockd](https://aur.archlinux.org/packages/dockd)
 [libthinkpad](https://aur.archlinux.org/packages/libthinkpad)
+
+## openSUSE
+
+All projects are currently packaged for openSUSE Leap 42.X.
+Special thanks to Flavio for the packaging!
 
 ## Other distros
 
