@@ -6,12 +6,33 @@ permalink: /repositories/
 
 We provide pre-built binaries for all projects that we host. Supported distributions are:     
 
-- [Ubuntu](#ubuntu)
+- [Ubuntu and Debian, Mint etc.](#ubuntuanddebian)
+- [~~Ubuntu~~](#ubuntu)
 - [Arch Linux](#archlinux)
 - [openSUSE](#opensuse)
 - [Other Distros](#otherdistros)
 
-## Ubuntu
+## Ubuntu and Debian, Mint etc.
+
+Staring with Ubuntu 18.04 Bionic Beaver (bionic), the APT repository has been switched to a unversal format, thus
+supporting all previous releases of Ubuntu and Debian and their derivates.
+
+To use this repository, first add the Thinkpads.org owner's GPG key:
+
+`wget -q -O - http://thinkpads.org/repo/thinkpads.gpg.key | sudo apt-key add - `   
+
+Next, issue this command to add the APT repo to your system:
+
+`echo "deb [arch=amd64] https://thinkpads.org/repo/apt/ /" | sudo tee /etc/apt/sources.list.d/thinkpads.list`    
+
+Then update the indices and use the new repo:
+
+```
+sudo apt update
+sudo apt install dockd, libthinkpad etc...
+```
+
+## ~~Ubuntu~~ (obsolete, see above)
 
 The ThinkPads.org team manages a couple of official repositories for versions of Ubuntu after Xenial Xerus.     
 That includes:
