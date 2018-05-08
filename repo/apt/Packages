@@ -1,54 +1,57 @@
 Package: dockd
-Version: 1.21-2
 Architecture: amd64
+Version: 1.21-2
+Priority: optional
+Section: utils
 Maintainer: Ognjen Galic <smclt30p@gmail.com>
 Installed-Size: 45
 Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libthinkpad1, libx11-6, libxrandr2 (>= 2:1.5)
-Filename: amd64/dockd_1.21-2_amd64.deb
+Filename: ./dockd_1.21-2_amd64.deb
 Size: 12076
 MD5sum: 2235ed25c2af94de30c2ca955ae6a01a
 SHA1: 57c6a7d16eb00de4e4d837cbd176479432f3bb00
 SHA256: 9a71c7e190087b4dd877fe8af119ed159a2caf49f2ea096dc240af812987d408
-Section: utils
-Priority: optional
+SHA512: 4b39db88d23803d4b6f295197255babbde8ca64ada3754e7899ab02c28b9ef5fca4084e192e8f0b32d0f756ab8b9245d51d1845f4d66d174e39e7d40f5045e8d
 Homepage: http://www.thinkpads.org/
 Description: Lenovo ThinkPad Dock Daemon
  This tools allows you to switch X modes
  automatically when you undock your ThinkPad.
 
 Package: libthinkpad-dev
-Source: libthinkpad
-Version: 2.6-2
 Architecture: amd64
+Version: 2.6-2
+Priority: optional
+Section: libdevel
+Source: libthinkpad
 Maintainer: Ognjen Galic <smclt30p@gmail.com>
 Installed-Size: 33
 Depends: libthinkpad1 (= 2.6-2), libudev-dev (>= 229), libsystemd0 (>= 229)
-Filename: amd64/libthinkpad-dev_2.6-2_amd64.deb
+Filename: ./libthinkpad-dev_2.6-2_amd64.deb
 Size: 6644
 MD5sum: c94f389441cb6729fe6abded052a0e50
 SHA1: 3181a91f67c0f12d660175deff1e49f95d93a890
 SHA256: 288d7e07b675179dea50f53701678417c13f36eed73c3e8f9ac413c70aa4dbb7
-Section: libdevel
-Priority: optional
+SHA512: 6412ef3635d8cca70cef924e05a1ce3dc8835d1530fc92c6666fe2ab15ec479b381f335d61b66e406055eac28d80e1bbaf88d07e9246b9c0eb1bccdeebd667f5
 Homepage: http://www.thinkpads.org/
 Description: ThinkPad Userspace Libraries - headers
  This is the development package for the Lenovo ThinkPad
  userspace tools provided by http://www.thinkpads.org/
 
 Package: libthinkpad1
-Source: libthinkpad
-Version: 2.6-2
 Architecture: amd64
+Version: 2.6-2
+Priority: optional
+Section: libs
+Source: libthinkpad
 Maintainer: Ognjen Galic <smclt30p@gmail.com>
 Installed-Size: 64
 Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libsystemd0 (>= 229), libudev1 (>= 229)
-Filename: amd64/libthinkpad1_2.6-2_amd64.deb
+Filename: ./libthinkpad1_2.6-2_amd64.deb
 Size: 17912
 MD5sum: 604cdcc03eeb00eac061d2770a9974fb
 SHA1: b07822e4614d4ca01ab6f9a4c1afe4e8484ddc6b
 SHA256: 0bb7cf570b6a0080f167e5f808d2b617ede932b2219db028855f348e93251a67
-Section: libs
-Priority: optional
+SHA512: eaea1cc63c8704bd60b358f8b61d0f64c0019e21d6f97079f65289213e26f5eb406b059b3fde0f7a2352a8f11e5e61cd2767cb24bc57bc0e719c0a9493404c81
 Homepage: http://www.thinkpads.org/
 Description: ThinkPad Userspace Libraries
  This is the main user space library for Lenovo
