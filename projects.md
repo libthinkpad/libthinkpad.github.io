@@ -16,3 +16,4 @@ Here are the currently published projects:
 
 - [dockd - Dock Management Daemon](/projects/dockd)
 - [libthinkpad - General Userspace ThinkPad Library](/projects/libthinkpad)
+- [apindex - Static file index generator for Github Pages](/projects/apindex)
