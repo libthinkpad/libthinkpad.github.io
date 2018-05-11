@@ -40,6 +40,15 @@ This renders __Index of /__.
 
 ### How do I install it?
 
+If you are using Debian or Ubuntu, you can see the Debian and Ubuntu section in the [Repositories](https://thinkpads.org/repositories/) section of the website to add the tp.o APT repository.
+After adding the repository, you can install `apindex`:
+
+```
+sudo apt install apindex
+``` 
+
+If you are using a different operating system, feel free to install apindex manually:
+
 ```
 tar -xf apindex-x.xx.tar.gz
 cp apindex-x.xx
