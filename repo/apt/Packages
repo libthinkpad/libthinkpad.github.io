@@ -17,6 +17,25 @@ Description: Static HTML file index generator
  This program enables you to generate a file index for static web
  servers such as Github Pages or mini HTTP servers.
 
+Package: apindex
+Architecture: amd64
+Version: 2.2-1
+Priority: optional
+Section: admin
+Maintainer: Ognjen Galic <smclt30p@gmail.com>
+Installed-Size: 60
+Depends: python3
+Filename: ./apindex_2.2-1_amd64.deb
+Size: 34984
+MD5sum: ff6f1b36d6e58d95062f149b67719563
+SHA1: d6ec349c827bea091f1bb11c2cd416b66167798b
+SHA256: effc3954c71da2f1f2dca61325214bc8753b7cce04a58caf9b4cffa4b68421a1
+SHA512: c2fed99f6dc7b0ae11a2c7508aa0cdf7010ed06a1df86b8d4a244a2aa035b7665b7c9ee1c5724cb25d38f67408841e646d0eb893513d76f38ee7a5dc77f5872a
+Homepage: https://thinkpads.org/projects/apindex
+Description: Static HTML file index generator
+ This program enables you to generate a file index for static web
+ servers such as Github Pages or mini HTTP servers.
+
 Package: dockd
 Architecture: amd64
 Version: 1.21-2
